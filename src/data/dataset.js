@@ -96,22 +96,6 @@ const moviesDevData = [
     }
   },
   {
-    id: "ready-player-one",
-    name: "Ready Player One",
-    year: 2018,
-    director: "Steven Spielberg",
-    productionCompany: "Warner Bros.",
-    genre: "Ciencia ficción",
-    imageUrl: "https://example.com/ready-player-one.jpg",
-    shortDescription: "Aventura virtual en un mundo distópico.",
-    description: "Ready Player One se desarrolla en un futuro distópico donde las personas escapan de la realidad a través de un mundo virtual llamado OASIS. La película explora la intersección de la tecnología, los videojuegos y la cultura pop.",
-    facts: {
-      rottenTomatoesScore: "72%",
-      country: "Estados Unidos",
-      duration: "140 minutos"
-    }
-  },
-  {
     id: "jobs",
     name: "Jobs",
     year: 2013,
@@ -125,22 +109,6 @@ const moviesDevData = [
       rottenTomatoesScore: "28%",
       country: "Estados Unidos",
       duration: "128 minutos"
-    }
-  },
-  {
-    id: "the-code-documentary",
-    name: "The Code: Story of Linux",
-    year: 2001,
-    director: "Marteinn Thorsson",
-    productionCompany: "Sony Pictures",
-    genre: "Documental",
-    imageUrl: "https://example.com/the-code-documentary.jpg",
-    shortDescription: "La historia del sistema operativo Linux y la comunidad de código abierto.",
-    description: "The Code: Story of Linux explora la historia del sistema operativo Linux y la cultura de código abierto. Desde sus inicios hasta convertirse en un fenómeno global, el documental destaca la colaboración y la innovación en la programación de software.",
-    facts: {
-      rottenTomatoesScore: "82%",
-      country: "Estados Unidos",
-      duration: "60 minutos"
     }
   },
   {
@@ -237,38 +205,6 @@ const moviesDevData = [
       rottenTomatoesScore: "92%",
       country: "Reino Unido",
       duration: "108 minutos"
-    }
-  },
-  {
-    id: "the-code-2001",
-    name: "The Code 2001",
-    year: 2001,
-    director: "Mika Taanila",
-    productionCompany: "Kinotar",
-    genre: "Documental",
-    imageUrl: "https://example.com/the-code-2001.jpg",
-    shortDescription: "Exploración poética de la historia de la programación de computadoras.",
-    description: "The Code 2001 es una exploración poética de la historia de la programación de computadoras. A través de imágenes y música, el documental presenta la evolución de la tecnología y su impacto en la sociedad moderna.",
-    facts: {
-      rottenTomatoesScore: "Not available",
-      country: "Finlandia",
-      duration: "75 minutos"
-    }
-  },
-  {
-    id: "coding-the-secret-language",
-    name: "Coding: The Secret Language",
-    year: 2017,
-    director: "Marc Schmidt",
-    productionCompany: "VPRO",
-    genre: "Documental",
-    imageUrl: "/src/img/",
-    shortDescription: "Exploración de la programación como un lenguaje creativo y universal.",
-    description: "Coding: The Secret Language explora la programación como un lenguaje creativo y universal. A través de entrevistas con programadores destacados, el documental destaca la belleza y la importancia de la codificación en diversas disciplinas.",
-    facts: {
-      rottenTomatoesScore: "Not available",
-      country: "Países Bajos",
-      duration: "87 minutos"
     }
   },
   {
@@ -381,22 +317,6 @@ const moviesDevData = [
       rottenTomatoesScore: "Not available",
       country: "España",
       duration: "68 minutos"
-    }
-  },
-  {
-    id: "citizens-of-boomtown",
-    name: "Citizens of Boomtown",
-    year: 2020,
-    director: "Lauren Greenfield",
-    productionCompany: "Amazon Studios",
-    genre: "Documental",
-    imageUrl: "/src/img/citizens-of-boomtown.png",
-    shortDescription: "Exploración del auge y la caída de Silicon Valley a través de personajes clave.",
-    description: "Citizens of Boomtown explora el auge y la caída de Silicon Valley a través de la vida de personajes clave. El documental examina la cultura empresarial y los impactos sociales de la revolución tecnológica.",
-    facts: {
-      rottenTomatoesScore: "Not available",
-      country: "Estados Unidos",
-      duration: "97 minutos"
     }
   },
   {
@@ -561,4 +481,4 @@ const moviesDevData = [
   }
 ];
 
-console.log(moviesData);
+console.log(moviesDevData);

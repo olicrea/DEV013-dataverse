@@ -6,7 +6,7 @@ const moviesDevData = [
     director: "David Fincher",
     productionCompany: "Columbia Pictures",
     genre: "Drama",
-    imageUrl: "https://example.com/the-social-network.jpg",
+    imageUrl: "/src/img/the-social-network.jpeg",
     shortDescription: "Historia del nacimiento de Facebook.",
     description: "The Social Network narra la historia del surgimiento de Facebook, desde la universidad hasta convertirse en una red social global. Explora las complejidades de la amistad, la traición y el éxito en el mundo digital.",
     facts: {
@@ -22,7 +22,7 @@ const moviesDevData = [
     director: "Iain Softley",
     productionCompany: "MGM",
     genre: "Thriller",
-    imageUrl: "https://example.com/hackers.jpg",
+    imageUrl: "/src/img/hackers.png",
     shortDescription: "Jóvenes hackers luchan contra la injusticia.",
     description: "Hackers sigue a un grupo de jóvenes hackers talentosos que se enfrentan a una conspiración corporativa. Con una mezcla de tecnología, intriga y acción, la película captura la esencia de la cultura hacker de los años 90.",
     facts: {
@@ -38,7 +38,7 @@ const moviesDevData = [
     director: "The Wachowskis",
     productionCompany: "Warner Bros.",
     genre: "Ciencia ficción",
-    imageUrl: "https://example.com/the-matrix.jpg",
+    imageUrl: "/src/img//the-matrix.jpeg",
     shortDescription: "Realidad virtual y rebelión contra las máquinas.",
     description: "The Matrix introduce a los espectadores en un mundo de realidad virtual controlado por máquinas. Neo, el protagonista, se embarca en una búsqueda para liberar a la humanidad. La película redefine la ciencia ficción con su mezcla única de filosofía y acción.",
     facts: {
@@ -54,7 +54,7 @@ const moviesDevData = [
     director: "James Swirsky, Lisanne Pajot",
     productionCompany: "BlinkWorks Media",
     genre: "Documental",
-    imageUrl: "https://example.com/indie-game-the-movie.jpg",
+    imageUrl: "/src/img//indie-game-the-movie.jpeg",
     shortDescription: "Historias detrás de la creación de videojuegos indie.",
     description: "Indie Game: The Movie ofrece una visión íntima de la vida de los desarrolladores de videojuegos independientes. Revela los desafíos emocionales y creativos que enfrentan mientras luchan por llevar a cabo sus visiones artísticas en el mundo de los videojuegos.",
     facts: {
@@ -70,7 +70,7 @@ const moviesDevData = [
     director: "Laura Poitras",
     productionCompany: "RADiUS-TWC",
     genre: "Documental",
-    imageUrl: "https://example.com/citizenfour.jpg",
+    imageUrl: "/src/img//citizenfour.jpeg",
     shortDescription: "Revelaciones sobre la vigilancia masiva.",
     description: "Citizenfour sigue al denunciante Edward Snowden mientras revela documentos clasificados sobre la vigilancia masiva. El documental proporciona una mirada fascinante a las implicaciones de la privacidad en la era digital y el impacto de las filtraciones de información.",
     facts: {
@@ -86,7 +86,7 @@ const moviesDevData = [
     director: "Morten Tyldum",
     productionCompany: "Black Bear Pictures",
     genre: "Biografía",
-    imageUrl: "https://example.com/the-imitation-game.jpg",
+    imageUrl: "/src/img/the-imitation-game",
     shortDescription: "Alan Turing descifra el código Enigma durante la Segunda Guerra Mundial.",
     description: "The Imitation Game narra la vida de Alan Turing, un brillante matemático que lideró el equipo que descifró el código Enigma nazi durante la Segunda Guerra Mundial. La película destaca la importancia de la tecnología en la historia militar.",
     facts: {
@@ -102,7 +102,7 @@ const moviesDevData = [
     director: "Joshua Michael Stern",
     productionCompany: "Open Road Films",
     genre: "Biografía",
-    imageUrl: "https://example.com/jobs.jpg",
+    imageUrl: "/src/img/jobs.jpeg",
     shortDescription: "La vida de Steve Jobs, co-fundador de Apple.",
     description: "Jobs presenta la vida de Steve Jobs, co-fundador de Apple, desde sus inicios en el garaje de sus padres hasta convertirse en un icono de la tecnología. La película aborda la innovación y la creatividad en el mundo de la informática.",
     facts: {
@@ -118,7 +118,7 @@ const moviesDevData = [
     director: "Ridley Scott",
     productionCompany: "20th Century Fox",
     genre: "Ciencia ficción",
-    imageUrl: "https://example.com/the-martian.jpg",
+    imageUrl: "/src/img/the-martian.jpeg",
     shortDescription: "Un astronauta lucha por sobrevivir en Marte con habilidades tecnológicas.",
     description: "The Martian sigue a Mark Watney, un astronauta atrapado en Marte. Utilizando sus habilidades tecnológicas, lucha por sobrevivir mientras la NASA trabaja para rescatarlo. La película destaca la importancia de la ingeniería en situaciones extremas.",
     facts: {
@@ -134,7 +134,7 @@ const moviesDevData = [
     director: "Martyn Burke",
     productionCompany: "TNT",
     genre: "Drama",
-    imageUrl: "https://example.com/pirates-of-silicon-valley.jpg",
+    imageUrl: "/src/img/the-pirates-of-silicon-valley.jpeg",
     shortDescription: "La rivalidad entre Steve Jobs y Bill Gates en la revolución de la computadora personal.",
     description: "Pirates of Silicon Valley narra la rivalidad entre Steve Jobs y Bill Gates durante la revolución de la computadora personal. La película explora la innovación, la competencia y el impacto de la tecnología en la sociedad.",
     facts: {
@@ -150,7 +150,7 @@ const moviesDevData = [
     director: "Jeff Orlowski",
     productionCompany: "Exposure Labs",
     genre: "Documental",
-    imageUrl: "https://example.com/the-social-dilemma.jpg",
+    imageUrl: "/src/img/the-social-dilemma.jpeg",
     shortDescription: "Exploración de los impactos negativos de las redes sociales en la sociedad.",
     description: "The Social Dilemma es un documental que explora los impactos negativos de las redes sociales en la sociedad moderna. Expertos en tecnología revelan cómo estas plataformas influyen en el comportamiento humano y la toma de decisiones.",
     facts: {
@@ -166,7 +166,7 @@ const moviesDevData = [
     director: "J.T.S. Moore",
     productionCompany: "Cinematico",
     genre: "Documental",
-    imageUrl: "https://example.com/revolution-os.jpg",
+    imageUrl: "/src/img/revolution-os.jpeg",
     shortDescription: "La historia del sistema operativo Linux y el movimiento de código abierto.",
     description: "Revolution OS cuenta la historia del sistema operativo Linux y el movimiento de código abierto. Desde los primeros días de la informática hasta la lucha por la libertad del software, el documental examina la filosofía y la comunidad detrás del código abierto.",
     facts: {
@@ -182,7 +182,7 @@ const moviesDevData = [
     director: "Spike Jonze",
     productionCompany: "Warner Bros.",
     genre: "Romance",
-    imageUrl: "https://example.com/her.jpg",
+    imageUrl: "/src/img/her.png",
     shortDescription: "Una historia de amor entre un hombre y un sistema operativo con inteligencia artificial.",
     description: "Her explora una historia de amor única entre un hombre solitario y un sistema operativo con inteligencia artificial. La película plantea preguntas sobre la relación entre la humanidad y la tecnología, examinando la conexión emocional con las máquinas.",
     facts: {
@@ -198,7 +198,7 @@ const moviesDevData = [
     director: "Alex Garland",
     productionCompany: "A24",
     genre: "Ciencia ficción",
-    imageUrl: "https://example.com/ex-machina.jpg",
+    imageUrl: "/src/img/ex-machina.jpeg",
     shortDescription: "Exploración de la inteligencia artificial y la ética en la creación de androides.",
     description: "Ex Machina sigue a Caleb, un programador, quien es invitado a probar la inteligencia artificial de un androide. La película examina la ética de la creación de seres conscientes y plantea preguntas sobre la inteligencia artificial.",
     facts: {
@@ -470,7 +470,7 @@ const moviesDevData = [
     director: "Joss Whedon",
     productionCompany: "Marvel Studios",
     genre: "Action",
-    imageUrl: "/src/img/Avengers.png",
+    imageUrl: "/src/img/avengers-age-of-ultron.png",
     shortDescription: "Los Vengadores enfrentan una inteligencia artificial amenazante.",
     description: "Avengers: Age of Ultron sigue a los Vengadores mientras enfrentan a Ultron, una inteligencia artificial decidida a erradicar a la humanidad. La película de Marvel combina acción épica y dilemas éticos relacionados con la tecnología.",
     facts: {

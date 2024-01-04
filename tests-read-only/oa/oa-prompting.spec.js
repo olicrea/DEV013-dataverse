@@ -62,7 +62,7 @@ describe('Test de data set', () => {
         });
       });
 
-      describe('shortDescripcion', () => {
+      describe('shortDescription', () => {
         it('Debe ser un string', () => {
           expect(typeof item.description).toBe('string');
         });
@@ -74,7 +74,7 @@ describe('Test de data set', () => {
       });
       
       
-      describe('descripcion', () => {
+      describe('description', () => {
         it('Debe ser un string', () => {
           expect(typeof item.description).toBe('string');
         });

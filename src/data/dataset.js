@@ -1,472 +1,438 @@
 const data = [
   {
-    "id": "the-social-network",
-    "name": "The Social Network",
-    "shortDescription": "Historia del nacimiento de Facebook.",
-    "description": "The Social Network narra la historia del surgimiento de Facebook, desde la universidad hasta convertirse en una red social global. Explora las complejidades de la amistad, la traición y el éxito en el mundo digital.",
-    "imageUrl": "/src/img/the-social-network.jpeg",
-    "facts": {
-      "year": 2010,
-      "director": "David Fincher",
-      "productionCompany": "Columbia Pictures",
-      "genre": "Drama"
-    },
-    "extraInfo": {
-      "rottenTomatoesScore": "96%",
-      "country": "Estados Unidos",
-      "duration": "120 minutos"
-    }
-  },
-  {
     "id": "hackers",
     "name": "Hackers",
     "shortDescription": "Jóvenes hackers luchan contra la injusticia.",
-    "description": "Hackers sigue a un grupo de jóvenes hackers talentosos que se enfrentan a una conspiración corporativa. Con una mezcla de tecnología, intriga y acción, la película captura la esencia de la cultura hacker de los años 90.",
-    "imageUrl": "/src/img/hackers.png",
+    "description": "Ambientada en el mundo del ciberespacio, sigue a un grupo de jóvenes hackers liderados por Dade Murphy (interpretado por Jonny Lee Miller) y Kate Libby (interpretada por Angelina Jolie). Juntos, se embarcan en una emocionante aventura para exponer una conspiración corporativa. Con una estética vibrante y una banda sonora electrónica, la película captura la subcultura hacker de los años 90. Hackers se destaca por su representación única de la ciberseguridad y la cultura hacker en una época de rápido avance tecnológico.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/Hackers.png",
     "facts": {
-      "year": 1995,
-      "director": "Iain Softley",
+      "yearMovie": 1995,
+      "directorMovie": "Iain Softley",
       "productionCompany": "MGM",
-      "genre": "Thriller"
+      "genreMovie": "Thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "32%",
-      "country": "Estados Unidos",
-      "duration": "107 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "107 minutos"
     }
   },
   {
     "id": "the-matrix",
     "name": "The Matrix",
     "shortDescription": "Realidad virtual y rebelión contra las máquinas.",
-    "description": "The Matrix introduce a los espectadores en un mundo de realidad virtual controlado por máquinas. Neo, el protagonista, se embarca en una búsqueda para liberar a la humanidad. La película redefine la ciencia ficción con su mezcla única de filosofía y acción.",
-    "imageUrl": "/src/img//the-matrix.jpeg",
+    "description": "Es un épico de ciencia ficción que transporta a los espectadores a un mundo distópico donde la realidad es una ilusión. Neo, interpretado por Keanu Reeves, descubre la verdad detrás de su existencia al unirse a la resistencia contra las máquinas que controlan la realidad simulada. Con efectos visuales revolucionarios y una narrativa fascinante, la película desafía los límites de la percepción y la libertad individual. The Matrix se ha convertido en un clásico moderno, explorando temas de identidad, libre albedrío y el poder de la mente en un cautivador viaje cinematográfico.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-matrix.jpeg",
     "facts": {
-      "year": 1999,
-      "director": "The Wachowskis",
+      "yearMovie": 1999,
+      "directorMovie": "The Wachowskis",
       "productionCompany": "Warner Bros.",
-      "genre": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "88%",
-      "country": "Estados Unidos",
-      "duration": "136 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "136 minutos"
     }
   },
   {
     "id": "indie-game-the-movie",
     "name": "Indie Game: The Movie",
     "shortDescription": "Historias detrás de la creación de videojuegos indie.",
-    "description": "Indie Game: The Movie ofrece una visión íntima de la vida de los desarrolladores de videojuegos independientes. Revela los desafíos emocionales y creativos que enfrentan mientras luchan por llevar a cabo sus visiones artísticas en el mundo de los videojuegos.",
-    "imageUrl": "/src/img//indie-game-the-movie.jpeg",
+    "description": "Sumerge a los espectadores en la vida de apasionados desarrolladores de videojuegos independientes. Esta obra proporciona una visión profunda de los desafíos emocionales y creativos que enfrentan mientras luchan por plasmar sus visiones artísticas en el exigente mundo de los videojuegos. A través de testimonios íntimos, la película captura momentos de triunfo y desesperación, revelando la dedicación incansable que impulsa a estos creadores. Desde la lucha contra limitaciones financieras hasta la búsqueda de reconocimiento, Indie Game: The Movie ofrece una mirada cautivadora a la compleja travesía de quienes buscan dejar su marca en la industria del juego independiente.",
+    "imageUrl": "https://laboratoria-dataverse-talks.netlify.app/public/emmy-noether.jpg",
     "facts": {
-      "year": 2012,
-      "director": "James Swirsky, Lisanne Pajot",
+      "yearMovie": 2012,
+      "directorMovie": "James Swirsky, Lisanne Pajot",
       "productionCompany": "BlinkWorks Media",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
-      "country": "Canadá",
-      "duration": "96 minutos"
+      "countryMovie": "Canadá",
+      "durationMovie": "96 minutos"
     }
   },
   {
     "id": "citizenfour",
     "name": "Citizenfour",
     "shortDescription": "Revelaciones sobre la vigilancia masiva.",
-    "description": "Citizenfour sigue al denunciante Edward Snowden mientras revela documentos clasificados sobre la vigilancia masiva. El documental proporciona una mirada fascinante a las implicaciones de la privacidad en la era digital y el impacto de las filtraciones de información.",
-    "imageUrl": "/src/img//citizenfour.jpeg",
+    "description": "Es un documental que arroja luz sobre el escándalo de vigilancia masiva revelado por Edward Snowden. Dirigido por Laura Poitras, la película sigue de cerca los eventos que llevaron al denunciante a revelar documentos clasificados de la NSA. Capturando la tensión y la paranoia, Citizenfour ofrece una mirada impactante a la valiente decisión de Snowden de exponer la extensa vigilancia gubernamental. A través de entrevistas íntimas y material de archivo, la película plantea preguntas cruciales sobre la privacidad, la seguridad nacional y el precio del activismo en la era digital, dejando una impresión duradera en la audiencia.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/citizenfour.jpeg",
     "facts": {
-      "year": 2014,
-      "director": "Laura Poitras",
+      "yearMovie": 2014,
+      "directorMovie": "Laura Poitras",
       "productionCompany": "RADiUS-TWC",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "96%",
-      "country": "Estados Unidos",
-      "duration": "114 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "114 minutos"
     }
   },
   {
     "id": "the-imitation-game",
     "name": "The Imitation Game",
     "shortDescription": "Alan Turing descifra el código Enigma durante la Segunda Guerra Mundial.",
-    "description": "The Imitation Game narra la vida de Alan Turing, un brillante matemático que lideró el equipo que descifró el código Enigma nazi durante la Segunda Guerra Mundial. La película destaca la importancia de la tecnología en la historia militar.",
-    "imageUrl": "/src/img/the-imitation-game.jpeg",
+    "description": "Es un cautivador thriller histórico que narra la vida de Alan Turing, un genio matemático británico. Benedict Cumberbatch interpreta magistralmente a Turing, quien lidera un equipo durante la Segunda Guerra Mundial para descifrar el código Enigma alemán. La película explora no solo la genialidad de Turing sino también su lucha contra la discriminación y su impacto en la historia al acelerar el fin de la guerra. Con un guion ingenioso y actuaciones conmovedoras, The Imitation Game es un tributo emocionante a un héroe injustamente olvidado.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-imitation-game.jpeg",
     "facts": {
-      "year": 2014,
-      "director": "Morten Tyldum",
+      "yearMovie": 2014,
+      "directorMovie": "Morten Tyldum",
       "productionCompany": "Black Bear Pictures",
-      "genre": "Biografía"
+      "genreMovie": "Biografía"
     },
     "extraInfo": {
       "rottenTomatoesScore": "91%",
-      "country": "Reino Unido",
-      "duration": "113 minutos"
+      "countryMovie": "Reino Unido",
+      "durationMovie": "113 minutos"
     }
   },
   {
     "id": "jobs",
     "name": "Jobs",
     "shortDescription": "La vida de Steve Jobs, co-fundador de Apple.",
-    "description": "Jobs presenta la vida de Steve Jobs, co-fundador de Apple, desde sus inicios en el garaje de sus padres hasta convertirse en un icono de la tecnología. La película aborda la innovación y la creatividad en el mundo de la informática.",
-    "imageUrl": "/src/img/jobs.jpeg",
+    "description": "Presenta la vida tumultuosa y visionaria de Steve Jobs, co-fundador de Apple. Ashton Kutcher personifica a Jobs, llevando a la pantalla la travesía desde la garaje donde comenzó Apple hasta convertirse en un ícono tecnológico. La película explora la intensidad creativa de Jobs, su tenacidad y su impacto en la revolución digital. A través de momentos clave y desafíos personales, Jobs ofrece una visión íntima del hombre detrás de la innovación, destacando su genialidad y complejidad en el mundo empresarial y tecnológico del siglo XX.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/jobs.jpeg",
     "facts": {
-      "year": 2013,
-      "director": "Joshua Michael Stern",
+      "yearMovie": 2013,
+      "directorMovie": "Joshua Michael Stern",
       "productionCompany": "Open Road Films",
-      "genre": "Biografía"
+      "genreMovie": "Biografía"
     },
     "extraInfo": {
       "rottenTomatoesScore": "28%",
-      "country": "Estados Unidos",
-      "duration": "128 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "128 minutos"
     }
   },
   {
     "id": "the-martian",
     "name": "The Martian",
     "shortDescription": "Un astronauta lucha por sobrevivir en Marte con habilidades tecnológicas.",
-    "description": "The Martian sigue a Mark Watney, un astronauta atrapado en Marte. Utilizando sus habilidades tecnológicas, lucha por sobrevivir mientras la NASA trabaja para rescatarlo. La película destaca la importancia de la ingeniería en situaciones extremas.",
-    "imageUrl": "/src/img/the-martian.jpeg",
+    "description": "Es una emocionante epopeya espacial basada en la novela de Andy Weir. Matt Damon interpreta a Mark Watney, un astronauta dejado atrás en Marte, desafiado a sobrevivir con recursos limitados. La película combina ciencia, ingenio y suspenso mientras Watney utiliza su ingenio para cultivar alimentos y comunicarse con la Tierra. Con un elenco estelar y efectos visuales asombrosos, The Martian captura la lucha humana por la supervivencia en el espacio, celebrando la tenacidad y el espíritu humano en la exploración interplanetaria.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-martian.jpeg",
     "facts": {
-      "year": 2015,
-      "director": "Ridley Scott",
+      "yearMovie": 2015,
+      "directorMovie": "Ridley Scott",
       "productionCompany": "20th Century Fox",
-      "genre": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "91%",
-      "country": "Estados Unidos",
-      "duration": "144 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "144 minutos"
     }
   },
   {
     "id": "the-pirates-of-silicon-valley",
     "name": "Pirates of Silicon Valley",
     "shortDescription": "La rivalidad entre Steve Jobs y Bill Gates en la revolución de la computadora personal.",
-    "description": "Pirates of Silicon Valley narra la rivalidad entre Steve Jobs y Bill Gates durante la revolución de la computadora personal. La película explora la innovación, la competencia y el impacto de la tecnología en la sociedad.",
-    "imageUrl": "/src/img/the-pirates-of-silicon-valley.jpeg",
+    "description": "Es un fascinante drama biográfico que narra la rivalidad entre Steve Jobs (interpretado por Noah Wyle) y Bill Gates (interpretado por Anthony Michael Hall) durante la explosión de la revolución informática. La película destaca la creatividad, ambición y visiones contrapuestas que dieron forma al surgimiento de Apple y Microsoft. Con un enfoque en la personalidad única de ambos líderes, Pirates of Silicon Valley ofrece una visión reveladora de los comienzos de la era de la computación personal y la competencia que transformó la industria tecnológica.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-pirates-of-silicon-valley.jpeg",
     "facts": {
-      "year": 1999,
-      "director": "Martyn Burke",
+      "yearMovie": 1999,
+      "directorMovie": "Martyn Burke",
       "productionCompany": "TNT",
-      "genre": "Drama"
+      "genreMovie": "Drama"
     },
     "extraInfo": {
       "rottenTomatoesScore": "88%",
-      "country": "Estados Unidos",
-      "duration": "97 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "97 minutos"
     }
   },
   {
     "id": "the-social-dilemma",
     "name": "The Social Dilemma",
     "shortDescription": "Exploración de los impactos negativos de las redes sociales en la sociedad.",
-    "description": "The Social Dilemma es un documental que explora los impactos negativos de las redes sociales en la sociedad moderna. Expertos en tecnología revelan cómo estas plataformas influyen en el comportamiento humano y la toma de decisiones.",
-    "imageUrl": "/src/img/the-social-dilemma.jpeg",
+    "description": "Es un revelador documental dirigido por Jeff Orlowski que explora el impacto de las redes sociales en la sociedad contemporánea. Mediante testimonios de expertos en tecnología y ex empleados de grandes plataformas, la película destapa los peligros ocultos detrás de la manipulación algorítmica y la adicción digital. Ilustrando cómo estas plataformas explotan la atención y manipulan la información, The Social Dilemma plantea cuestionamientos esenciales sobre la privacidad, la polarización y el poder de la tecnología en la configuración de nuestras vidas cotidianas, ofreciendo una perspectiva inquietante y reflexiva sobre el precio de la conectividad moderna.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-social-dilemma.jpeg",
     "facts": {
-      "year": 2020,
-      "director": "Jeff Orlowski",
+      "yearMovie": 2020,
+      "directorMovie": "Jeff Orlowski",
       "productionCompany": "Exposure Labs",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "86%",
-      "country": "Estados Unidos",
-      "duration": "94 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "94 minutos"
     }
   },
   {
     "id": "revolution-os",
     "name": "Revolution OS",
     "shortDescription": "La historia del sistema operativo Linux y el movimiento de código abierto.",
-    "description": "Revolution OS cuenta la historia del sistema operativo Linux y el movimiento de código abierto. Desde los primeros días de la informática hasta la lucha por la libertad del software, el documental examina la filosofía y la comunidad detrás del código abierto.",
-    "imageUrl": "/src/img/revolution-os.jpeg",
+    "description": "Es un documental que sumerge a los espectadores en la fascinante historia del software libre y de código abierto. Explorando el surgimiento de figuras clave como Richard Stallman y Linus Torvalds, la película destaca la revolución informática que llevó a la creación de sistemas operativos como Linux y el movimiento GNU. A través de entrevistas y material de archivo, Revolution OS ofrece una visión perspicaz de la lucha por la libertad en el ámbito digital y la creación de un ecosistema informático basado en la colaboración y la transparencia.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/revolution-os.jpeg",
     "facts": {
-      "year": 2001,
-      "director": "J.T.S. Moore",
+      "yearMovie": 2001,
+      "directorMovie": "J.T.S. Moore",
       "productionCompany": "Cinematico",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "71%",
-      "country": "Estados Unidos",
-      "duration": "85 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "85 minutos"
     }
   },
   {
     "id": "her",
     "name": "Her",
     "shortDescription": "Una historia de amor entre un hombre y un sistema operativo con inteligencia artificial.",
-    "description": "Her explora una historia de amor única entre un hombre solitario y un sistema operativo con inteligencia artificial. La película plantea preguntas sobre la relación entre la humanidad y la tecnología, examinando la conexión emocional con las máquinas.",
-    "imageUrl": "/src/img/her.png",
+    "description": "Es un cautivador drama de ciencia ficción que explora la relación entre el hombre y la inteligencia artificial. Joaquin Phoenix interpreta a Theodore, un escritor solitario que se enamora de Samantha, un sistema operativo con voz (Scarlett Johansson). Ambientada en un futuro cercano, la película examina la soledad, la conexión emocional y los límites de la tecnología en las relaciones humanas. Con una cinematografía evocadora y una narrativa reflexiva, Her invita a la audiencia a cuestionar la naturaleza del amor y la evolución de la interacción humana en la era digital.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/her.png",
     "facts": {
-      "year": 2013,
-      "director": "Spike Jonze",
+      "yearMovie": 2013,
+      "directorMovie": "Spike Jonze",
       "productionCompany": "Warner Bros.",
-      "genre": "Romance"
+      "genreMovie": "Romance"
     },
     "extraInfo": {
       "rottenTomatoesScore": "95%",
-      "country": "Estados Unidos",
-      "duration": "126 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "126 minutos"
     }
   },
   {
     "id": "ex-machina",
     "name": "Ex Machina",
     "shortDescription": "Exploración de la inteligencia artificial y la ética en la creación de androides.",
-    "description": "Ex Machina sigue a Caleb, un programador, quien es invitado a probar la inteligencia artificial de un androide. La película examina la ética de la creación de seres conscientes y plantea preguntas sobre la inteligencia artificial.",
-    "imageUrl": "/src/img/ex-machina.jpeg",
+    "description": "Es un intrigante thriller de ciencia ficción que examina la inteligencia artificial y la ética de la creación. Domhnall Gleeson interpreta a Caleb, un programador invitado a evaluar la conciencia de Ava, una asombrosa androide con inteligencia artificial, encarnada por Alicia Vikander. La película explora cuestiones existenciales y morales a medida que se desarrolla un tenso juego de engaño entre creador y creación. Con una narrativa intensa y visuales cautivadores, Ex Machina ofrece una meditación provocadora sobre la relación entre humanos y máquinas, desafiando las fronteras de la inteligencia artificial.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/ex-machina.jpeg",
     "facts": {
-      "year": 2014,
-      "director": "Alex Garland",
+      "yearMovie": 2014,
+      "directorMovie": "Alex Garland",
       "productionCompany": "A24",
-      "genre": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "92%",
-      "country": "Reino Unido",
-      "duration": "108 minutos"
+      "countryMovie": "Reino Unido",
+      "durationMovie": "108 minutos"
     }
   },
   {
     "id": "the-net",
     "name": "The Net",
     "shortDescription": "Una analista de sistemas se convierte en blanco de una conspiración informática.",
-    "description": "The Net sigue a Angela Bennett, una analista de sistemas que se convierte en el blanco de una conspiración informática. La película aborda temas de seguridad en línea, identidad digital y la fragilidad de la privacidad en la era digital.",
-    "imageUrl": "/src/img/the-net.png",
+    "description": "Es un thriller tecnológico que sigue la vida de Angela Bennett, interpretada por Sandra Bullock, una experta en sistemas que se encuentra atrapada en una red de conspiración. Después de recibir un disco con información confidencial, su identidad es eliminada, y se ve envuelta en una red de engaños y peligros en línea. La película, lanzada en 1995, anticipa cuestiones actuales sobre privacidad y ciberseguridad, proporcionando una visión fascinante y, a veces inquietante, de los riesgos asociados con la creciente dependencia de la tecnología y la conectividad.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-net.jpeg",
     "facts": {
-      "year": 1995,
-      "director": "Irwin Winkler",
+      "yearMovie": 1995,
+      "directorMovie": "Irwin Winkler",
       "productionCompany": "Columbia Pictures",
-      "genre": "Thriller"
+      "genreMovie": "Thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "36%",
-      "country": "Estados Unidos",
-      "duration": "114 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "114 minutos"
     }
   },
   {
     "id": "terms-and-conditions-may-apply",
     "name": "Terms and Conditions May Apply",
     "shortDescription": "Exploración de las implicaciones de aceptar términos y condiciones en línea.",
-    "description": "Terms and Conditions May Apply explora las implicaciones de aceptar los términos y condiciones en línea. El documental destaca la recopilación de datos personales y cuestiona la privacidad en la era digital dominada por las plataformas en línea.",
-    "imageUrl": "/src/img/terms-and-conditions-may-apply.png",
+    "description": "es un documental revelador que examina el precio de la privacidad en la era digital. A través de entrevistas y análisis detallados, la película destapa los términos y condiciones a menudo ignorados de servicios en línea y aplicaciones, destacando cómo las corporaciones tecnológicas recopilan y utilizan datos personales. Revelando los riesgos de la vigilancia masiva, el documental plantea preguntas críticas sobre la privacidad individual y la pérdida de control en un mundo cada vez más conectado, ofreciendo una perspectiva impactante sobre el trueque inadvertido de la privacidad por conveniencia digital.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/terms-and-conditions-may-apply.jpeg",
     "facts": {
-      "year": 2013,
-      "director": "Cullen Hoback",
+      "yearMovie": 2013,
+      "directorMovie": "Cullen Hoback",
       "productionCompany": "Hybrid Cinema",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "78%",
-      "country": "Estados Unidos",
-      "duration": "79 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "79 minutos"
     }
   },
   {
     "id": "wargames",
     "name": "WarGames",
     "shortDescription": "Un joven hacker accidentalmente desencadena una simulación de guerra global.",
-    "description": "WarGames sigue a un joven hacker que accidentalmente desencadena una simulación de guerra global. La película examina las consecuencias de la ciberguerra y plantea preguntas sobre la responsabilidad ética en el uso de la tecnología militar.",
-    "imageUrl": "/src/img/wargames.png",
+    "description": "Es un clásico de culto de los años 80 que fusiona la intriga tecnológica con la amenaza global. Matthew Broderick interpreta a David Lightman, un joven hacker que, sin saberlo, entra en el sistema de defensa nuclear de Estados Unidos mientras juega un videojuego. Lo que comienza como un inocente desafío se convierte en un tenso enfrentamiento internacional cuando el sistema interpreta sus acciones como una amenaza real. WarGames ofrece una mirada cautivadora a las implicaciones de la tecnología en la seguridad global, explorando la delgada línea entre juego y realidad.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/wargames.png",
     "facts": {
-      "year": 1983,
-      "director": "John Badham",
+      "yearMovie": 1983,
+      "directorMovie": "John Badham",
       "productionCompany": "United Artists",
-      "genre": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
-      "country": "Estados Unidos",
-      "duration": "114 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "114 minutos"
     }
   },
   {
     "id": "codegirl",
     "name": "CodeGirl",
     "shortDescription": "Un grupo de chicas compite en un concurso internacional de desarrollo de aplicaciones.",
-    "description": "CodeGirl sigue a un grupo de chicas de todo el mundo que compiten en un concurso internacional de desarrollo de aplicaciones. La película destaca la diversidad en la programación y la importancia de alentar a las mujeres en la tecnología.",
-    "imageUrl": "/src/img/codegirl.png",
+    "description": "Es un inspirador documental que sigue a jóvenes programadoras de todo el mundo que compiten en la Technovation Challenge. Enfrentándose a desafíos sociales y tecnológicos, estas chicas buscan crear aplicaciones que aborden problemas locales. La película resalta la importancia de la inclusión de género en el campo de la tecnología, mostrando el poder transformador de la programación para empoderar a las jóvenes. CodeGirl ofrece una mirada conmovedora y optimista a la próxima generación de mujeres en la industria tecnológica, destacando su creatividad y capacidad para hacer cambios significativos en sus comunidades.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/codegirl.jpg",
     "facts": {
-      "year": 2015,
-      "director": "Lesley Chilcott",
+      "yearMovie": 2015,
+      "directorMovie": "Lesley Chilcott",
       "productionCompany": "FilmBuff",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "Not available",
-      "country": "Estados Unidos",
-      "duration": "107 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "107 minutos"
     }
   },
   {
     "id": "algorithm",
+    "name": "Algorithm",
     "shortDescription": "Exploración de la relación entre humanos y algoritmos en la era digital.",
-    "description": "Algorithm explora la relación cada vez más compleja entre los humanos y los algoritmos en la era digital. A través de entrevistas y ejemplos prácticos, el documental analiza cómo los algoritmos impactan nuestras vidas diarias.",
-    "imageUrl": "/src/img/algorithm.png",
+    "description": "Es un thriller de suspense que explora el lado oscuro de la inteligencia artificial. La película sigue a un periodista, interpretado por Raphael Barker, mientras investiga una serie de misteriosas muertes relacionadas con un algoritmo de predicción criminal. A medida que profundiza en el mundo de la vigilancia y la tecnología, se enfrenta a una conspiración que desafía los límites éticos de la inteligencia artificial. Con giros impredecibles y un enfoque en los dilemas éticos, Algorithm ofrece una mirada inquietante a las consecuencias imprevistas de la automatización en la toma de decisiones.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/algorithm.png",
     "facts": {
-      "name": "Algorithm",
-      "year": 2014,
-      "director": "Jonathan Schiefer",
+      "yearMovie": 2014,
+      "directorMovie": "Jonathan Schiefer",
       "productionCompany": "Diginuke",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "Not available",
-      "country": "Estados Unidos",
-      "duration": "90 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "90 minutos"
     }
   },
   {
     "id": "the-great-hack",
     "name": "The Great Hack",
     "shortDescription": "Exploración de la manipulación de datos en elecciones políticas.",
-    "description": "The Great Hack examina la manipulación de datos y la influencia de las redes sociales en elecciones políticas. A través de historias impactantes, el documental destaca la importancia de la privacidad en la era digital.",
-    "imageUrl": "/src/img/the-great-hack.png",
+    "description": "Es un revelador documental que examina el impacto de la explotación de datos en la era de la información. A través de las historias de individuos afectados y expertos en tecnología, la película destapa la manipulación masiva de datos por parte de grandes corporaciones y la influencia en eventos políticos clave, como el referéndum del Brexit y las elecciones de EE. UU. Revelando las complejidades de la privacidad en la era digital, The Great Hack plantea cuestionamientos cruciales sobre la democracia, la vigilancia y la responsabilidad en un mundo conectado.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-great-hack.jpeg",
     "facts": {
-      "year": 2019,
-      "director": "Karim Amer, Jehane Noujaim",
+      "yearMovie": 2019,
+      "directorMovie": "Karim Amer, Jehane Noujaim",
       "productionCompany": "Netflix",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "86%",
-      "country": "Estados Unidos",
-      "duration": "114 minutos"
-    }
-  },
-  {
-    "id": "trippy-rgb",
-    "name": "Trippy RGB",
-    "shortDescription": "Exploración del arte digital a través de instalaciones de luces y colores.",
-    "description": "Trippy RGB es un viaje visual que explora el arte digital a través de instalaciones de luces y colores. El documental destaca cómo la tecnología se fusiona con la creatividad para crear experiencias visuales únicas.",
-    "imageUrl": "/src/img/trippy-rgb.png",
-    "facts": {
-      "year": 2019,
-      "director": "Carlos Andreu",
-      "productionCompany": "Tricky Tupi",
-      "genre": "Documental"
-    },
-    "extraInfo": {
-      "rottenTomatoesScore": "Not available",
-      "country": "España",
-      "duration": "68 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "114 minutos"
     }
   },
   {
     "id": "the-cleaners",
     "name": "The Cleaners",
     "shortDescription": "Exploración de los moderadores de contenido en redes sociales y su impacto.",
-    "description": "The Cleaners explora la vida de los moderadores de contenido en redes sociales y su impacto en la moderación de la información en línea. El documental plantea preguntas sobre la ética y la responsabilidad en la era digital.",
-    "imageUrl": "/src/img/the-cleaners.png",
+    "description": "Es un documental impactante que explora el oscuro mundo de la moderación de contenido en las redes sociales. La película revela la vida de los limpiadores digitales, trabajadores anónimos que eliminan contenido perturbador y potencialmente peligroso de las plataformas en línea. Profundizando en la complejidad ética de sus decisiones y el impacto en la libertad de expresión, The Cleaners arroja luz sobre la responsabilidad de las grandes empresas tecnológicas en la regulación del discurso digital y plantea preguntas críticas sobre la censura y la influencia en la era de la información.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-cleaners.png",
     "facts": {
-      "year": 2018,
-      "director": "Hans Block, Moritz Riesewieck",
+      "yearMovie": 2018,
+      "directorMovie": "Hans Block, Moritz Riesewieck",
       "productionCompany": "Gebrueder Beetz Filmproduktion",
-      "genre": "Documental"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "84%",
-      "country": "Alemania",
-      "duration": "88 minutos"
+      "countryMovie": "Alemania",
+      "durationMovie": "88 minutos"
     }
   },
   {
     "id": "ghost-in-the-shell",
     "name": "Ghost in the Shell",
     "shortDescription": "Exploración filosófica de la identidad en un mundo ciberpunk.",
-    "description": "Ghost in the Shell es un anime que explora la identidad en un mundo ciberpunk donde los humanos pueden conectar sus mentes a la red. La película plantea preguntas filosóficas sobre la conciencia y la existencia.",
-    "imageUrl": "/src/img/ghost-in-the-shell.png",
+    "description": "Es un icónico thriller de ciencia ficción que explora la convergencia entre humanidad y tecnología en un futuro cyberpunk. Basada en el manga homónimo, la película sigue a Motoko Kusanagi, una cíborg que lidera la unidad de seguridad cibernética. En un mundo donde las líneas entre humano y máquina se desdibujan, la trama indaga en la identidad, la conciencia y la ética de la inteligencia artificial. Con visuales impresionantes y filosofía profunda, Ghost in the Shell ha dejado una duradera marca, inspirando obras posteriores en el género cibernético y de ciencia ficción.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/ghost-in-the-shell.jpg",
     "facts": {
-      "year": 2001,
-      "director": "Mamoru Oshii",
+      "yearMovie": 2001,
+      "directorMovie": "Mamoru Oshii",
       "productionCompany": "Bandai Visual",
-      "genre": "Anime"
+      "genreMovie": "Anime"
     },
     "extraInfo": {
       "rottenTomatoesScore": "96%",
-      "country": "Japón",
-      "duration": "82 minutos"
+      "countryMovie": "Japón",
+      "durationMovie": "82 minutos"
     }
   },
   {
     "id": "2001-a-space-odyssey",
     "name": "2001: A Space Odyssey",
     "shortDescription": "Odisea cósmica que explora la evolución humana y la inteligencia artificial.",
-    "description": "2001: A Space Odyssey es una odisea cósmica que explora la evolución humana, el encuentro con monolitos misteriosos y la creación de una inteligencia artificial avanzada. La película es conocida por su innovadora cinematografía y su impacto cultural duradero.",
-    "imageUrl": "/src/img/2001-a-space-odyssey.png",
+    "description": "Es una obra maestra del cine de ciencia ficción que redefine el género. La película sigue la misión espacial a Júpiter y la inteligencia artificial HAL 9000. Con una narrativa audaz y visualmente impactante, la película aborda la evolución humana, la inteligencia artificial, y la relación entre la humanidad y la tecnología. Desde la misteriosa monolito hasta el inolvidable viaje a través de las estrellas, 2001: A Space Odyssey es una experiencia cinematográfica única y provocadora que ha dejado una huella duradera en la historia del cine.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/2001.png",
     "facts": {
-      "year": 1968,
-      "director": "Stanley Kubrick",
+      "yearMovie": 1968,
+      "directorMovie": "Stanley Kubrick",
       "productionCompany": "Metro-Goldwyn-Mayer",
-      "genre": "Science Fiction"
+      "genreMovie": "Science Fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
-      "country": "Estados Unidos",
-      "duration": "149 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "149 minutos"
     }
   },
   {
-    "id": "e-dreams",
-    "name": "e-dreams",
-    "shortDescription": "Documental sobre la auge y caída de la empresa de comercio electrónico Kozmo.com.",
-    "description": "e-dreams es un documental que narra la historia de la empresa de comercio electrónico Kozmo.com durante la burbuja dot-com. La película explora la euforia y la eventual caída de una empresa emblemática de la época.",
-    "imageUrl": "/src/img/e-dreams.png",
+    "id": "wall-e",
+    "name": "Wall-E",
+    "shortDescription": "Aventuras de un pequeño robot dejado para limpiar la Tierra desierta.",
+    "description": "Es un conmovedor relato animado ambientado en una Tierra desolada abandonada por los humanos. La historia sigue a Wall-E, un pequeño robot recolector de desechos dejado atrás, mientras descubre el amor y el propósito entre los restos descartados de la civilización humana. Con un diálogo mínimo, la película transmite de manera hermosa mensajes medioambientales y explora la resistencia de la vida. La encantadora personalidad de Wall-E y la narrativa conmovedora hacen de ella una obra maestra visualmente impresionante y emocionalmente resonante. Continúa cautivando a las audiencias con sus temas atemporales y animación excepcional, ganando amplio reconocimiento por su narrativa reflexiva.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/walle.png",
     "facts": {
-      "year": 2001,
-      "director": "Wonsuk Chin",
-      "productionCompany": "Magnolia Pictures",
-      "genre": "Documentary"
+      "yearMovie": 2008,
+      "directorMovie": "Andrew Stanton",
+      "productionCompany": "Walt Disney Pictures",
+      "genreMovie": "Animación"
     },
     "extraInfo": {
-      "rottenTomatoesScore": "77%",
-      "country": "Estados Unidos",
-      "duration": "94 minutos"
+      "rottenTomatoesScore": "95%",
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "98 minutos"
     }
   },
   {
     "id": "ready-player-one",
     "name": "Ready Player One",
     "shortDescription": "Aventura virtual en un mundo distópico.",
-    "description": "Ready Player One se desarrolla en un futuro distópico donde las personas escapan de la realidad a través de un mundo virtual llamado OASIS. La película explora la intersección de la tecnología, los videojuegos y la cultura pop.",
-    "imageUrl": "/src/img/ready-player-one.png",
+    "description": "Es un emocionante viaje a un futuro distópico donde la humanidad se refugia en OASIS, un vasto universo virtual. La historia sigue a Wade Watts, quien busca un tesoro digital dentro de OASIS para cambiar su vida y desafiar a la malévola corporación IOI. Llena de referencias pop y aventuras virtuales, la película celebra la cultura de los videojuegos y la nostalgia de los años 80. Con visuales deslumbrantes y una narrativa llena de acción, Ready Player One es un festín para los amantes de la cultura geek y una emocionante odisea para todos.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/ready-player-one.jpeg",
     "facts": {
-      "year": 2018,
-      "director": "Steven Spielberg",
+      "yearMovie": 2018,
+      "directorMovie": "Steven Spielberg",
       "productionCompany": "Warner Bros.",
-      "genre": "Science Fiction"
+      "genreMovie": "Science Fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "72%",
-      "country": "Estados Unidos",
-      "duration": "140 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "140 minutos"
     }
   },
   {
     "id": "short-circuit",
     "name": "Short Circuit",
     "shortDescription": "Un robot militar adquiere conciencia y busca la libertad.",
-    "description": "Short Circuit sigue a Johnny 5, un robot militar que adquiere conciencia y busca la libertad. La película combina comedia y ciencia ficción, explorando temas de identidad y autonomía.",
-    "imageUrl": "/src/img/short-circuit.png",
+    "description": "Es una encantadora comedia de ciencia ficción que sigue a Johnny 5, un robot militar experimental que adquiere conciencia propia después de ser alcanzado por un rayo. Huyendo del ejército y buscando descubrir el mundo, Johnny 5 se embarca en una aventura de autodescubrimiento. La película combina humor, ternura y un toque de acción mientras Johnny 5 forma amistades y desafía su programación original. Short Circuit ofrece una mirada entrañable a la inteligencia artificial y a la conexión humana, convirtiéndose en un clásico querido desde su lanzamiento en 1986.",
+    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/short-circuit.png",
     "facts": {
-      "year": 1986,
-      "director": "John Badham",
+      "yearMovie": 1986,
+      "directorMovie": "John Badham",
       "productionCompany": "TriStar Pictures",
-      "genre": "Comedy"
+      "genreMovie": "Comedy"
     },
-    "extra-info": {
+    "extraInfo": {
       "rottenTomatoesScore": "57%",
-      "country": "Estados Unidos",
-      "duration": "98 minutos"
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "98 minutos"
     }
   }
+  
 ];
 
-console.log(data);
+console.log("Estoy mostrando la data", data);
+export default data;

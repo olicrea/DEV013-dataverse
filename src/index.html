@@ -8,15 +8,33 @@
   <body>
     <header>
         <h1>MovieDev</h1>
-    </header>
-    <label for="movie">Movie</label>
-    <select name="movie" id="movie">
-      <option value="1">a</option>
-      <option value="2">b</option>
-      <option value="3">c</option>
-    </select>
-    <div id="root"></div>
-    <footer></footer>
+        <label for="genre">Filtrar por género</label>
+        <select name="genre" id="genre" data-testid="select-genre">
+          <option value="Thriller">Thriller</option>
+          <option value="Documental">Documental</option>
+          <option value="Drama">Drama</option>
+        </select>
+    
+        <label for="alfa">Ordenar alfabéticamente</label>
+        <select name="alfa" id="alfa" data-testid="select-alfa">
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+        </select>
+    
+        <label for="year">Ordenar por año</label>
+        <select name="year" id="year" data-testid="select-year">
+          <option value="ascendente">Ascendente</option>
+          <option value="descemdente">Descendente</option>
+        </select>
+    </header> 
+
+    <div id="root">
+      <ul class="cards"></ul>
+    </div>
+    <footer>M.O.Dev</footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
+
+<dt></dt>
+<dl></dl>

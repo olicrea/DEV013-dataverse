@@ -8,7 +8,7 @@ export const renderItems = (data) => {
                 <dt></dt><dd itemprop="name">${film.name}</dd>
                 <dt></dt><dd itemprop="shortDescription">${film.shortDescription}</dd>
                 <dt></dt><dd itemprop="yearMovie">${film.facts.yearMovie}</dd>
-
+              
               </dl>
               </li>`
   });

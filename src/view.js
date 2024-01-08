@@ -1,3 +1,4 @@
+
 //import data from "./data/dataset";
 
 export const renderItems = (data) => {
@@ -29,7 +30,9 @@ export const renderFiltThriller = (data) => {
   data.forEach(function (film) { 
     if(film.facts.genreMovie === "Thriller"){
       //arrayThriller.push(film);
+      
       html += `<li class="dos" itemscope itemtype="movie">
+
                   <dl>
                     <img src="${film.imageUrl}" alt=${film.name} />
                     <dt></dt><dd itemprop="name">${film.name}</dd>

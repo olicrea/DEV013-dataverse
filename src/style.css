@@ -19,7 +19,28 @@ h1 {
 }
 
 body {
-    margin: 20px;
     background-color: #1F0441;
-    color: white;
+    color: #1F0441;
+    margin: 0;
+}
+
+.uno, .dos {
+    width: 20vw;
+    height: 30vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #0CE3E8;
+}
+
+img {
+    height: 20vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }

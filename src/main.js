@@ -1,7 +1,5 @@
-
-import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes  } from './dataFunctions.js';
-import { renderItems, renderFiltThriller, renderMoviesGenre  } from './view.js';
-
+import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes, filterData } from './dataFunctions.js';
+import { renderItems } from './view.js';
 
 import data from './data/dataset.js';
 
@@ -19,16 +17,22 @@ console.log("estoy ordenando por años de manera ascendente", yearsAsc);
 const yearsDes = ordenYearsDes(data);
 console.log("estoy ordenando por años de manera descendente", yearsDes);
 
-const filtThriller = renderFiltThriller(data);
-console.log("estoy filtrando por género Thriller", filtThriller);
-
 const renderedHTML = renderItems(data);
 console.log(renderedHTML);
 
-const thrillerHtml = renderMoviesGenre (data, "Thriller");
-console.log(thrillerHtml);
-
-const documentalHtml = renderMoviesGenre (data, "Documental");
-console.log(documentalHtml);
-
 document.querySelector('#root').innerHTML = renderedHTML;
+
+const filter = document.querySelector('#genre')
+filter.addEventListener('change',(e)=>{
+  console.log('voy a filtrar por género: ', e.target.value); //verificando "escuchar"
+  const datafiltrada = filterData(data,'genreMovie', e.target.value);  // filterData deberia retornar un arreglo con la data filtrada
+  console.log('array filtro por genero: ', datafiltrada)
+  document.querySelector('#root').innerHTML = renderItems(datafiltrada); // renderizar el arreglo
+
+})
+
+//const selection = document.querySelector('select');
+const button = document.querySelector("button")
+button.addEventListener("click", function(){
+  document.querySelector("select").value="";
+})

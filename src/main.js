@@ -30,3 +30,9 @@ filter.addEventListener('change',(e)=>{
   document.querySelector('#root').innerHTML = renderItems(datafiltrada); // renderizar el arreglo
 
 })
+
+//const selection = document.querySelector('select');
+const button = document.querySelector("button")
+button.addEventListener("click", function(){
+  document.querySelector("select").value="";
+})

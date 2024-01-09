@@ -4,7 +4,7 @@ const data = [
     "name": "Hackers",
     "shortDescription": "Jóvenes hackers luchan contra la injusticia.",
     "description": "Ambientada en el mundo del ciberespacio, sigue a un grupo de jóvenes hackers liderados por Dade Murphy (interpretado por Jonny Lee Miller) y Kate Libby (interpretada por Angelina Jolie). Juntos, se embarcan en una emocionante aventura para exponer una conspiración corporativa. Con una estética vibrante y una banda sonora electrónica, la película captura la subcultura hacker de los años 90. Hackers se destaca por su representación única de la ciberseguridad y la cultura hacker en una época de rápido avance tecnológico.",
-    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/Hackers.png",
+    "imageUrl": "https://drive.google.com/drive/u/0/folders/1v2hUOeyAZhDHSSpGpjXBE-baVwqXVWae",
     "facts": {
       "yearMovie": 1995,
       "directorMovie": "Iain Softley",
@@ -22,7 +22,7 @@ const data = [
     "name": "The Matrix",
     "shortDescription": "Realidad virtual y rebelión contra las máquinas.",
     "description": "Es un épico de ciencia ficción que transporta a los espectadores a un mundo distópico donde la realidad es una ilusión. Neo, interpretado por Keanu Reeves, descubre la verdad detrás de su existencia al unirse a la resistencia contra las máquinas que controlan la realidad simulada. Con efectos visuales revolucionarios y una narrativa fascinante, la película desafía los límites de la percepción y la libertad individual. The Matrix se ha convertido en un clásico moderno, explorando temas de identidad, libre albedrío y el poder de la mente en un cautivador viaje cinematográfico.",
-    "imageUrl": "https://github.com/olicrea/DEV013-dataverse/blob/main/src/img/the-matrix.jpeg",
+    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/2001.png",
     "facts": {
       "yearMovie": 1999,
       "directorMovie": "The Wachowskis",

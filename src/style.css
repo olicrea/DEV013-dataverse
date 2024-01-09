@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/config-ultra');
+             
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +9,44 @@ header {
     background-color: #FC1068;
     padding: 10px;
     color: white;
-    align-items: center;
-    width: 100%;
-    min-height: 50px;
+    width: 100vw;
+    height: 100px;
+    
 }
 
 h1 {
     text-align: center;
     font-family: 'Config Ultra', sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;                        
 }
 
 body {
-    margin: 20px;
     background-color: #1F0441;
     color: white;
+}
+li{
+    flex: 0 0 200px;
+    height: 200px;
+    background-color: #0CE3E8;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+img{
+    height: 6vw;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    height: 20vw;
 }

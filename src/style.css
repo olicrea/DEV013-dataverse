@@ -8,39 +8,51 @@ header {
     background-color: #FC1068;
     padding: 10px;
     color: white;
-    align-items: center;
-    width: 100%;
-    min-height: 50px;
+    width: 100vw;
+    height: 100px;
 }
 
 h1 {
     text-align: center;
+    font-size: 60px;
     font-family: 'Config Ultra', sans-serif;
+    margin-bottom: 5px;
 }
 
 body {
     background-color: #1F0441;
     color: #1F0441;
-    margin: 0;
 }
 
-.uno, .dos {
-    width: 20vw;
-    height: 30vw;
+li {
+    flex: 0 0 200px;
+    height: 250px;
     padding: 10px;
     border-radius: 5px;
-    margin: 10px;
     background-color: #0CE3E8;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 img {
-    height: 20vw;
+    height: 13vw;
 }
 
-ul {
+.uno {
     list-style: none;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vw;
+    padding: 20px;
+}
+
+.dos {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
 }

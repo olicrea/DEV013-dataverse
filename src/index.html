@@ -9,30 +9,33 @@
     <header>
         <h1>MovieDev</h1>
         <label for="genre">Filtrar por género</label>
-        <select name="genre" id="genre" data-testid="select-genre">
+        <select name="genre" id="genre" data-testid="select-filter">
           <option value="Thriller">Thriller</option>
           <option value="Documental">Documental</option>
           <option value="Drama">Drama</option>
         </select>
     
         <label for="alfa">Ordenar alfabéticamente</label>
-        <select name="alfa" id="alfa" data-testid="select-alfa">
-          <option value="az">A - Z</option>
-          <option value="za">Z - A</option>
+        <select name="alfa" id="alfa" data-testid="select-sort">
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
         </select>
     
         <label for="year">Ordenar por año</label>
-        <select name="year" id="year" data-testid="select-year">
-          <option value="ascendente">Ascendente</option>
-          <option value="descemdente">Descendente</option>
+        <select name="year" id="year" data-testid="select-sort-year">
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
         </select>
+
+        <button data-testid="button-clear">Limpiar</button>
     </header> 
+    
+    <main>
+      <h2 class="variable"></h2>
+    </main>
 
     <div id="root"></div>
     <footer>M.O.Dev</footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
-
-<dt></dt>
-<dl></dl>

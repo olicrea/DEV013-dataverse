@@ -4,7 +4,7 @@ export const renderItems = (data) => {
   //console.log(data)
   let html = '';
   data.forEach(function (film) { 
-    html += `<li class="uno" itemscope itemtype="movie">
+    html += `<li itemscope itemtype="movie">
               <dl>
                 <img src="${film.imageUrl}" alt="Imagen de la película ${film.name}"/>
                 <dt></dt><dd itemprop="name">${film.name}</dd>
@@ -15,7 +15,7 @@ export const renderItems = (data) => {
               </li>`
   });
 
-  html = '<ul>' + html + '</ul>';
+  html = '<ul class="uno">' + html + '</ul>';
   return html;
 };
 
@@ -30,16 +30,36 @@ export const renderFiltThriller = (data) => {
     if(film.facts.genreMovie === "Thriller"){
       //arrayThriller.push(film);
       html += `<li class="dos" itemscope itemtype="movie">
+              <dl>
+                <img src="${film.imageUrl}" alt="Imagen de la película ${film.name}"/>
+                <dt></dt><dd itemprop="name">${film.name}</dd>
+                <dt></dt><dd itemprop="shortDescription">${film.shortDescription}</dd>
+                <dt></dt><dd itemprop="genreMovie">${film.facts.genreMovie}</dd>
+
+              </dl>
+              </li>`
+    }
+  });
+  html = '<ul>' + html + '</ul>';
+  return html
+};
+
+export const renderMoviesGenre = (data, genre) => {
+
+  let html = '';
+  data.forEach(function (film) { 
+    if(film.facts.genreMovie === genre){
+      html += `<li itemscope itemtype="movie">
                   <dl>
                     <img src="${film.imageUrl}" alt=${film.name} />
                     <dt></dt><dd itemprop="name">${film.name}</dd>
                     <dt></dt><dd itemprop="shortDescription">${film.shortDescription}</dd>
-                    <dt></dt><dd itemprop="yearMovie">${film.facts.yearMovie}</dd>
+                    <dt></dt><dd itemprop="genreMovie">${film.facts.genreMovie}</dd>
 
                   </dl>
                 </li>`
     }
   });
-  html = '<ul>' + html + '</ul>';
+  html = '<ul class="dos">' + html + '</ul>';
   return html
 };

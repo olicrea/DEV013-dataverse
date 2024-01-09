@@ -25,7 +25,7 @@ document.querySelector('#root').innerHTML = renderedHTML;
 const filter = document.querySelector('#genre')
 filter.addEventListener('change',(e)=>{
   console.log('voy a filtrar por género: ', e.target.value); //verificando "escuchar"
-  let datafiltrada = filterData(data,'genreMovie', e.target.value);  // filterData deberia retornar un arreglo con la data filtrada
+  const datafiltrada = filterData(data,'genreMovie', e.target.value);  // filterData deberia retornar un arreglo con la data filtrada
   console.log('array filtro por genero: ', datafiltrada)
   document.querySelector('#root').innerHTML = renderItems(datafiltrada); // renderizar el arreglo
 

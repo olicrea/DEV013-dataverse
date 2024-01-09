@@ -236,7 +236,7 @@ const data = [
   {
     "id": "terms-and-conditions-may-apply",
     "name": "Terms and Conditions May Apply",
-    "shortDescription": "Exploración de las implicaciones de aceptar términos y condiciones en línea.",
+    "shortDescription": "Implicaciones de aceptar términos y condiciones en línea.",
     "description": "es un documental revelador que examina el precio de la privacidad en la era digital. A través de entrevistas y análisis detallados, la película destapa los términos y condiciones a menudo ignorados de servicios en línea y aplicaciones, destacando cómo las corporaciones tecnológicas recopilan y utilizan datos personales. Revelando los riesgos de la vigilancia masiva, el documental plantea preguntas críticas sobre la privacidad individual y la pérdida de control en un mundo cada vez más conectado, ofreciendo una perspectiva impactante sobre el trueque inadvertido de la privacidad por conveniencia digital.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/terms-and-conditions-may-apply.jpeg",
     "facts": {

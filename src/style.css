@@ -23,30 +23,27 @@ h1 {
 
 body {
     background-color: #1F0441;
-    color: white;
-}
-li{
-    flex: 0 0 200px;
-    height: 200px;
-    background-color: #0CE3E8;
-    margin: 10px;
-    color: black;
-    text-align: center;
-    border-radius: 5px;
-}
-img{
-    height: 6vw;
-    margin-top: 10px;
-    border-radius: 5px;
+    color: #1F0441;
+    margin: 0;
 }
 
-ul{
+.uno, .dos {
+    width: 20vw;
+    height: 30vw;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #0CE3E8;
+}
+
+img {
+    height: 20vw;
+}
+
+ul {
     list-style: none;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
-    padding: 10px;
-    height: 20vw;
+    padding: 20px;
 }

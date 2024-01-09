@@ -1,10 +1,12 @@
+
 import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes  } from './dataFunctions.js';
 import { renderItems, renderFiltThriller, renderMoviesGenre  } from './view.js';
+
 
 import data from './data/dataset.js';
 
 //console.log(example, renderItems(data), data);
-
+  
 const alfaAsc = ordenAlfaAsc(data);
 console.log("estoy ordenando A-Z", alfaAsc);
 

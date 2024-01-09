@@ -1,3 +1,4 @@
+
 //import data from "./data/dataset";
 
 export const renderItems = (data) => {
@@ -29,27 +30,8 @@ export const renderFiltThriller = (data) => {
   data.forEach(function (film) { 
     if(film.facts.genreMovie === "Thriller"){
       //arrayThriller.push(film);
+      
       html += `<li class="dos" itemscope itemtype="movie">
-              <dl>
-                <img src="${film.imageUrl}" alt="Imagen de la película ${film.name}"/>
-                <dt></dt><dd itemprop="name">${film.name}</dd>
-                <dt></dt><dd itemprop="shortDescription">${film.shortDescription}</dd>
-                <dt></dt><dd itemprop="genreMovie">${film.facts.genreMovie}</dd>
-
-              </dl>
-              </li>`
-    }
-  });
-  html = '<ul>' + html + '</ul>';
-  return html
-};
-
-export const renderMoviesGenre = (data, genre) => {
-
-  let html = '';
-  data.forEach(function (film) { 
-    if(film.facts.genreMovie === genre){
-      html += `<li itemscope itemtype="movie">
                   <dl>
                     <img src="${film.imageUrl}" alt=${film.name} />
                     <dt></dt><dd itemprop="name">${film.name}</dd>

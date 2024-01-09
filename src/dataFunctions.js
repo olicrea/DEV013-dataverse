@@ -21,4 +21,3 @@ export const ordenYearsDes = (array) => {
   const copyArray = [...array]
   return copyArray.sort((a,b)=> b.facts.yearMovie - a.facts.yearMovie);
 };
-

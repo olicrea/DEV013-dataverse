@@ -1,5 +1,7 @@
-import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes, filtrarThriller } from './dataFunctions.js';
-import { renderItems,renderFiltThriller } from './view.js';
+
+import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes  } from './dataFunctions.js';
+import { renderItems, renderFiltThriller  } from './view.js';
+
 
 import data from './data/dataset.js';
 

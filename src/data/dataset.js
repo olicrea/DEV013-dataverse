@@ -2,7 +2,7 @@ const data = [
   {
     "id": "hackers",
     "name": "Hackers",
-    "shortDescription": "Jóvenes hackers luchan contra la injusticia.",
+    "shortDescription": "Jóvenes hackers y aventureros luchan contra la injusticia.",
     "description": "Ambientada en el mundo del ciberespacio, sigue a un grupo de jóvenes hackers liderados por Dade Murphy (interpretado por Jonny Lee Miller) y Kate Libby (interpretada por Angelina Jolie). Juntos, se embarcan en una emocionante aventura para exponer una conspiración corporativa. Con una estética vibrante y una banda sonora electrónica, la película captura la subcultura hacker de los años 90. Hackers se destaca por su representación única de la ciberseguridad y la cultura hacker en una época de rápido avance tecnológico.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/Hackers.png",
     "facts": {
@@ -18,21 +18,21 @@ const data = [
     }
   },
   {
-    "id": "the-matrix",
-    "name": "The Matrix",
-    "shortDescription": "Realidad virtual y rebelión contra las máquinas.",
-    "description": "Es un épico de ciencia ficción que transporta a los espectadores a un mundo distópico donde la realidad es una ilusión. Neo, interpretado por Keanu Reeves, descubre la verdad detrás de su existencia al unirse a la resistencia contra las máquinas que controlan la realidad simulada. Con efectos visuales revolucionarios y una narrativa fascinante, la película desafía los límites de la percepción y la libertad individual. The Matrix se ha convertido en un clásico moderno, explorando temas de identidad, libre albedrío y el poder de la mente en un cautivador viaje cinematográfico.",
-    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/the-matrix.jpeg",
+    "id": "short-circuit",
+    "name": "Short Circuit",
+    "shortDescription": "Un robot militar adquiere conciencia y busca la libertad.",
+    "description": "Es una encantadora comedia de ciencia ficción que sigue a Johnny 5, un robot militar experimental que adquiere conciencia propia después de ser alcanzado por un rayo. Huyendo del ejército y buscando descubrir el mundo, Johnny 5 se embarca en una aventura de autodescubrimiento. La película combina humor, ternura y un toque de acción mientras Johnny 5 forma amistades y desafía su programación original. Short Circuit ofrece una mirada entrañable a la inteligencia artificial y a la conexión humana, convirtiéndose en un clásico querido desde su lanzamiento en 1986.",
+    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/short-circuit.png",
     "facts": {
-      "yearMovie": 1999,
-      "directorMovie": "The Wachowskis",
-      "productionCompany": "Warner Bros.",
+      "yearMovie": 1986,
+      "directorMovie": "John Badham",
+      "productionCompany": "TriStar Pictures",
       "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
-      "rottenTomatoesScore": "88%",
+      "rottenTomatoesScore": "57%",
       "countryMovie": "Estados Unidos",
-      "durationMovie": "136 minutos"
+      "durationMovie": "98 minutos"
     }
   },
   {
@@ -56,7 +56,7 @@ const data = [
   {
     "id": "citizenfour",
     "name": "Citizenfour",
-    "shortDescription": "Revelaciones sobre la vigilancia masiva.",
+    "shortDescription": "Revelaciones sobre la vigilancia masiva gubernamental.",
     "description": "Es un documental que arroja luz sobre el escándalo de vigilancia masiva revelado por Edward Snowden. Dirigido por Laura Poitras, la película sigue de cerca los eventos que llevaron al denunciante a revelar documentos clasificados de la NSA. Capturando la tensión y la paranoia, Citizenfour ofrece una mirada impactante a la valiente decisión de Snowden de exponer la extensa vigilancia gubernamental. A través de entrevistas íntimas y material de archivo, la película plantea preguntas cruciales sobre la privacidad, la seguridad nacional y el precio del activismo en la era digital, dejando una impresión duradera en la audiencia.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/citizenfour.jpeg",
     "facts": {
@@ -81,7 +81,7 @@ const data = [
       "yearMovie": 2014,
       "directorMovie": "Morten Tyldum",
       "productionCompany": "Black Bear Pictures",
-      "genreMovie": "Biografía"
+      "genreMovie": "Thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "91%",
@@ -92,14 +92,14 @@ const data = [
   {
     "id": "jobs",
     "name": "Jobs",
-    "shortDescription": "La vida de Steve Jobs, co-fundador de Apple.",
+    "shortDescription": "La vida visionaria y tumultuosa de Steve Jobs, co-fundador de Apple.",
     "description": "Presenta la vida tumultuosa y visionaria de Steve Jobs, co-fundador de Apple. Ashton Kutcher personifica a Jobs, llevando a la pantalla la travesía desde la garaje donde comenzó Apple hasta convertirse en un ícono tecnológico. La película explora la intensidad creativa de Jobs, su tenacidad y su impacto en la revolución digital. A través de momentos clave y desafíos personales, Jobs ofrece una visión íntima del hombre detrás de la innovación, destacando su genialidad y complejidad en el mundo empresarial y tecnológico del siglo XX.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/jobs.jpeg",
     "facts": {
       "yearMovie": 2013,
       "directorMovie": "Joshua Michael Stern",
       "productionCompany": "Open Road Films",
-      "genreMovie": "Biografía"
+      "genreMovie": "Documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "28%",
@@ -127,8 +127,8 @@ const data = [
   },
   {
     "id": "the-pirates-of-silicon-valley",
-    "name": "Pirates of Silicon Valley",
-    "shortDescription": "La rivalidad entre Steve Jobs y Bill Gates en la revolución de la computadora personal.",
+    "name": "Pirates of S.V",
+    "shortDescription": "La rivalidad entre Steve Jobs y Bill Gates en la revolución informática.",
     "description": "Es un fascinante drama biográfico que narra la rivalidad entre Steve Jobs (interpretado por Noah Wyle) y Bill Gates (interpretado por Anthony Michael Hall) durante la explosión de la revolución informática. La película destaca la creatividad, ambición y visiones contrapuestas que dieron forma al surgimiento de Apple y Microsoft. Con un enfoque en la personalidad única de ambos líderes, Pirates of Silicon Valley ofrece una visión reveladora de los comienzos de la era de la computación personal y la competencia que transformó la industria tecnológica.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/the-pirates-of-silicon-valley.jpeg",
     "facts": {
@@ -164,7 +164,7 @@ const data = [
   {
     "id": "revolution-os",
     "name": "Revolution OS",
-    "shortDescription": "La historia del sistema operativo Linux y el movimiento de código abierto.",
+    "shortDescription": "La historia del sistema operativo Linux y el código abierto.",
     "description": "Es un documental que sumerge a los espectadores en la fascinante historia del software libre y de código abierto. Explorando el surgimiento de figuras clave como Richard Stallman y Linus Torvalds, la película destaca la revolución informática que llevó a la creación de sistemas operativos como Linux y el movimiento GNU. A través de entrevistas y material de archivo, Revolution OS ofrece una visión perspicaz de la lucha por la libertad en el ámbito digital y la creación de un ecosistema informático basado en la colaboración y la transparencia.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/revolution-os.jpeg",
     "facts": {
@@ -182,14 +182,14 @@ const data = [
   {
     "id": "her",
     "name": "Her",
-    "shortDescription": "Una historia de amor entre un hombre y un sistema operativo con inteligencia artificial.",
+    "shortDescription": "Una historia de amor entre un hombre y un sistema operativo con IA.",
     "description": "Es un cautivador drama de ciencia ficción que explora la relación entre el hombre y la inteligencia artificial. Joaquin Phoenix interpreta a Theodore, un escritor solitario que se enamora de Samantha, un sistema operativo con voz (Scarlett Johansson). Ambientada en un futuro cercano, la película examina la soledad, la conexión emocional y los límites de la tecnología en las relaciones humanas. Con una cinematografía evocadora y una narrativa reflexiva, Her invita a la audiencia a cuestionar la naturaleza del amor y la evolución de la interacción humana en la era digital.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/her.png",
     "facts": {
       "yearMovie": 2013,
       "directorMovie": "Spike Jonze",
       "productionCompany": "Warner Bros.",
-      "genreMovie": "Romance"
+      "genreMovie": "Drama"
     },
     "extraInfo": {
       "rottenTomatoesScore": "95%",
@@ -200,7 +200,7 @@ const data = [
   {
     "id": "ex-machina",
     "name": "Ex Machina",
-    "shortDescription": "Exploración de la inteligencia artificial y la ética en la creación de androides.",
+    "shortDescription": "Exploración de la inteligencia artificial y la ética en su creación.",
     "description": "Es un intrigante thriller de ciencia ficción que examina la inteligencia artificial y la ética de la creación. Domhnall Gleeson interpreta a Caleb, un programador invitado a evaluar la conciencia de Ava, una asombrosa androide con inteligencia artificial, encarnada por Alicia Vikander. La película explora cuestiones existenciales y morales a medida que se desarrolla un tenso juego de engaño entre creador y creación. Con una narrativa intensa y visuales cautivadores, Ex Machina ofrece una meditación provocadora sobre la relación entre humanos y máquinas, desafiando las fronteras de la inteligencia artificial.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/ex-machina.jpeg",
     "facts": {
@@ -235,7 +235,7 @@ const data = [
   },
   {
     "id": "terms-and-conditions-may-apply",
-    "name": "Terms and Conditions May Apply",
+    "name": "T&C may apply",
     "shortDescription": "Implicaciones de aceptar términos y condiciones en línea.",
     "description": "es un documental revelador que examina el precio de la privacidad en la era digital. A través de entrevistas y análisis detallados, la película destapa los términos y condiciones a menudo ignorados de servicios en línea y aplicaciones, destacando cómo las corporaciones tecnológicas recopilan y utilizan datos personales. Revelando los riesgos de la vigilancia masiva, el documental plantea preguntas críticas sobre la privacidad individual y la pérdida de control en un mundo cada vez más conectado, ofreciendo una perspectiva impactante sobre el trueque inadvertido de la privacidad por conveniencia digital.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/terms-and-conditions-may-apply.jpeg",
@@ -254,7 +254,7 @@ const data = [
   {
     "id": "wargames",
     "name": "WarGames",
-    "shortDescription": "Un joven hacker accidentalmente desencadena una simulación de guerra global.",
+    "shortDescription": "Un joven hacker desencadena una simulación de guerra global.",
     "description": "Es un clásico de culto de los años 80 que fusiona la intriga tecnológica con la amenaza global. Matthew Broderick interpreta a David Lightman, un joven hacker que, sin saberlo, entra en el sistema de defensa nuclear de Estados Unidos mientras juega un videojuego. Lo que comienza como un inocente desafío se convierte en un tenso enfrentamiento internacional cuando el sistema interpreta sus acciones como una amenaza real. WarGames ofrece una mirada cautivadora a las implicaciones de la tecnología en la seguridad global, explorando la delgada línea entre juego y realidad.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/wargames.png",
     "facts": {
@@ -272,7 +272,7 @@ const data = [
   {
     "id": "codegirl",
     "name": "CodeGirl",
-    "shortDescription": "Un grupo de chicas compite en un concurso internacional de desarrollo de aplicaciones.",
+    "shortDescription": "Un grupo de chicas programadoras compite en un concurso internacional.",
     "description": "Es un inspirador documental que sigue a jóvenes programadoras de todo el mundo que compiten en la Technovation Challenge. Enfrentándose a desafíos sociales y tecnológicos, estas chicas buscan crear aplicaciones que aborden problemas locales. La película resalta la importancia de la inclusión de género en el campo de la tecnología, mostrando el poder transformador de la programación para empoderar a las jóvenes. CodeGirl ofrece una mirada conmovedora y optimista a la próxima generación de mujeres en la industria tecnológica, destacando su creatividad y capacidad para hacer cambios significativos en sus comunidades.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/codegirl.jpg",
     "facts": {
@@ -326,7 +326,7 @@ const data = [
   {
     "id": "the-cleaners",
     "name": "The Cleaners",
-    "shortDescription": "Exploración de los moderadores de contenido en redes sociales y su impacto.",
+    "shortDescription": "Exploración de los moderadores de contenido en redes sociales.",
     "description": "Es un documental impactante que explora el oscuro mundo de la moderación de contenido en las redes sociales. La película revela la vida de los limpiadores digitales, trabajadores anónimos que eliminan contenido perturbador y potencialmente peligroso de las plataformas en línea. Profundizando en la complejidad ética de sus decisiones y el impacto en la libertad de expresión, The Cleaners arroja luz sobre la responsabilidad de las grandes empresas tecnológicas en la regulación del discurso digital y plantea preguntas críticas sobre la censura y la influencia en la era de la información.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/the-cleaners.png",
     "facts": {
@@ -351,7 +351,7 @@ const data = [
       "yearMovie": 2001,
       "directorMovie": "Mamoru Oshii",
       "productionCompany": "Bandai Visual",
-      "genreMovie": "Anime"
+      "genreMovie": "Animación"
     },
     "extraInfo": {
       "rottenTomatoesScore": "96%",
@@ -369,7 +369,7 @@ const data = [
       "yearMovie": 1968,
       "directorMovie": "Stanley Kubrick",
       "productionCompany": "Metro-Goldwyn-Mayer",
-      "genreMovie": "Science Fiction"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
@@ -398,14 +398,14 @@ const data = [
   {
     "id": "ready-player-one",
     "name": "Ready Player One",
-    "shortDescription": "Aventura virtual en un mundo distópico.",
+    "shortDescription": "Aventura virtual en un mundo distópico dentro de un OASIS.",
     "description": "Es un emocionante viaje a un futuro distópico donde la humanidad se refugia en OASIS, un vasto universo virtual. La historia sigue a Wade Watts, quien busca un tesoro digital dentro de OASIS para cambiar su vida y desafiar a la malévola corporación IOI. Llena de referencias pop y aventuras virtuales, la película celebra la cultura de los videojuegos y la nostalgia de los años 80. Con visuales deslumbrantes y una narrativa llena de acción, Ready Player One es un festín para los amantes de la cultura geek y una emocionante odisea para todos.",
     "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/ready-player-one.jpeg",
     "facts": {
       "yearMovie": 2018,
       "directorMovie": "Steven Spielberg",
       "productionCompany": "Warner Bros.",
-      "genreMovie": "Science Fiction"
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
       "rottenTomatoesScore": "72%",
@@ -414,21 +414,21 @@ const data = [
     }
   },
   {
-    "id": "short-circuit",
-    "name": "Short Circuit",
-    "shortDescription": "Un robot militar adquiere conciencia y busca la libertad.",
-    "description": "Es una encantadora comedia de ciencia ficción que sigue a Johnny 5, un robot militar experimental que adquiere conciencia propia después de ser alcanzado por un rayo. Huyendo del ejército y buscando descubrir el mundo, Johnny 5 se embarca en una aventura de autodescubrimiento. La película combina humor, ternura y un toque de acción mientras Johnny 5 forma amistades y desafía su programación original. Short Circuit ofrece una mirada entrañable a la inteligencia artificial y a la conexión humana, convirtiéndose en un clásico querido desde su lanzamiento en 1986.",
-    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/short-circuit.png",
+    "id": "the-matrix",
+    "name": "The Matrix",
+    "shortDescription": "Realidad virtual en un mundo distópico en rebelión contra las máquinas.",
+    "description": "Es un épico de ciencia ficción que transporta a los espectadores a un mundo distópico donde la realidad es una ilusión. Neo, interpretado por Keanu Reeves, descubre la verdad detrás de su existencia al unirse a la resistencia contra las máquinas que controlan la realidad simulada. Con efectos visuales revolucionarios y una narrativa fascinante, la película desafía los límites de la percepción y la libertad individual. The Matrix se ha convertido en un clásico moderno, explorando temas de identidad, libre albedrío y el poder de la mente en un cautivador viaje cinematográfico.",
+    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/the-matrix.jpeg",
     "facts": {
-      "yearMovie": 1986,
-      "directorMovie": "John Badham",
-      "productionCompany": "TriStar Pictures",
-      "genreMovie": "Comedy"
+      "yearMovie": 1999,
+      "directorMovie": "The Wachowskis",
+      "productionCompany": "Warner Bros.",
+      "genreMovie": "Ciencia ficción"
     },
     "extraInfo": {
-      "rottenTomatoesScore": "57%",
+      "rottenTomatoesScore": "88%",
       "countryMovie": "Estados Unidos",
-      "durationMovie": "98 minutos"
+      "durationMovie": "136 minutos"
     }
   }
   

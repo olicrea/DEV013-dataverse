@@ -17,10 +17,14 @@ console.log("estoy ordenando por años de manera ascendente", yearsAsc);
 const yearsDes = ordenYearsDes(data);
 console.log("estoy ordenando por años de manera descendente", yearsDes);
 
+
+
 const renderedHTML = renderItems(data);
 console.log(renderedHTML);
 
 document.querySelector('#root').innerHTML = renderedHTML;
+
+
 
 const filter = document.querySelector('#genre')
 filter.addEventListener('change',(e)=>{

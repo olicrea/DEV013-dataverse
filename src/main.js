@@ -1,29 +1,39 @@
-import { ordenAlfaAsc, ordenYearsAsc, ordenAlfaDesc, ordenYearsDes, filterData } from './dataFunctions.js';
+import { filterData, sortData, computeStats} from './dataFunctions.js';
 import { renderItems } from './view.js';
-
 import data from './data/dataset.js';
 
-//console.log(example, renderItems(data), data);
-  
-const alfaAsc = ordenAlfaAsc(data);
-console.log("estoy ordenando A-Z", alfaAsc);
-
-const alfaDes = ordenAlfaDesc(data);
-console.log("estoy ordenando Z-A", alfaDes);
-
-const yearsAsc = ordenYearsAsc(data);
-console.log("estoy ordenando por años de manera ascendente", yearsAsc);
-
-const yearsDes = ordenYearsDes(data);
-console.log("estoy ordenando por años de manera descendente", yearsDes);
-
-
-
+// Lugar de asignación de resultado rendered
 const renderedHTML = renderItems(data);
-console.log(renderedHTML);
+// console.log(renderedHTML);
+const rootElement = document.querySelector('#root');
+if (rootElement) {
+  rootElement.innerHTML = renderedHTML;
+}
 
-document.querySelector('#root').innerHTML = renderedHTML;
+// Lugar a obtener valor de las opciones
+const selectElementYear = document.querySelector("#year");
+const selectElementAlfa = document.querySelector("#alfa");
 
+// Escuchar ese evento addEventListener("change", (event) => {}); year/alfa
+selectElementYear.addEventListener("change", (e) => {
+  console.log('voy a ordednar por año: ', e.target.value);
+  const dataOrdenada = sortData(data, "yearMovie", e.target.value);
+  const rootElement = document.querySelector('#root');
+  if (rootElement) {
+    rootElement.innerHTML = renderItems(dataOrdenada);
+    console.log('array ordenar por año: ', e.target.value,  dataOrdenada)
+  }
+});
+
+selectElementAlfa.addEventListener("change", (e) => {
+  console.log('voy a filtrar por alfabeto: ', e.target.value);
+  const dataOrdenada = sortData(data, "name", e.target.value);
+  const rootElement = document.querySelector('#root');
+  if (rootElement) {
+    rootElement.innerHTML = renderItems(dataOrdenada);
+    console.log('array ordenar por nombre: ', e.target.value, dataOrdenada)
+  }
+});
 
 
 const filter = document.querySelector('#genre')
@@ -38,5 +48,10 @@ filter.addEventListener('change',(e)=>{
 //const selection = document.querySelector('select');
 const button = document.querySelector("button")
 button.addEventListener("click", function(){
-  document.querySelector("select").value="";
+  document.querySelectorAll("select").forEach(unselect =>{
+    unselect.value=''
+  })
 })
+
+const estadistica = computeStats(data)
+console.log(estadistica)

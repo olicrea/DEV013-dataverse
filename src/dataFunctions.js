@@ -56,10 +56,11 @@ export const computeStats = (data) => {
   const perOut70 = Math.round((scoreOut70.length * 100) / data.length);
   console.log(perOut70)
   const perOut90 = Math.round((scoreOut90.length * 100) / data.length);
+  console.log(perOut90)
   return {
-    perOut50,
-    perOut70,
-    perOut90,
+    scoreOut50
+    //scoreOut70,
+    //scoreOut90,
   };
 }
 

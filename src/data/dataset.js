@@ -9,7 +9,8 @@ const data = [
       "yearMovie": 1995,
       "directorMovie": "Iain Softley",
       "productionCompany": "MGM",
-      "genreMovie": "Thriller"
+      "genreMovie": "Thriller",
+      "genreValue": "thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "32%",
@@ -27,7 +28,8 @@ const data = [
       "yearMovie": 1986,
       "directorMovie": "John Badham",
       "productionCompany": "TriStar Pictures",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "57%",
@@ -45,7 +47,8 @@ const data = [
       "yearMovie": 2012,
       "directorMovie": "James Swirsky, Lisanne Pajot",
       "productionCompany": "BlinkWorks Media",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
@@ -63,7 +66,8 @@ const data = [
       "yearMovie": 2014,
       "directorMovie": "Laura Poitras",
       "productionCompany": "RADiUS-TWC",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "96%",
@@ -81,7 +85,8 @@ const data = [
       "yearMovie": 2014,
       "directorMovie": "Morten Tyldum",
       "productionCompany": "Black Bear Pictures",
-      "genreMovie": "Thriller"
+      "genreMovie": "Thriller",
+      "genreValue": "thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "91%",
@@ -99,7 +104,8 @@ const data = [
       "yearMovie": 2013,
       "directorMovie": "Joshua Michael Stern",
       "productionCompany": "Open Road Films",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "28%",
@@ -117,7 +123,8 @@ const data = [
       "yearMovie": 2015,
       "directorMovie": "Ridley Scott",
       "productionCompany": "20th Century Fox",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "91%",
@@ -135,7 +142,8 @@ const data = [
       "yearMovie": 1999,
       "directorMovie": "Martyn Burke",
       "productionCompany": "TNT",
-      "genreMovie": "Drama"
+      "genreMovie": "Drama",
+      "genreValue": "drama"
     },
     "extraInfo": {
       "rottenTomatoesScore": "88%",
@@ -153,7 +161,8 @@ const data = [
       "yearMovie": 2020,
       "directorMovie": "Jeff Orlowski",
       "productionCompany": "Exposure Labs",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "86%",
@@ -171,7 +180,8 @@ const data = [
       "yearMovie": 2001,
       "directorMovie": "J.T.S. Moore",
       "productionCompany": "Cinematico",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "71%",
@@ -189,7 +199,8 @@ const data = [
       "yearMovie": 2013,
       "directorMovie": "Spike Jonze",
       "productionCompany": "Warner Bros.",
-      "genreMovie": "Drama"
+      "genreMovie": "Drama",
+      "genreValue": "drama"
     },
     "extraInfo": {
       "rottenTomatoesScore": "95%",
@@ -207,7 +218,8 @@ const data = [
       "yearMovie": 2014,
       "directorMovie": "Alex Garland",
       "productionCompany": "A24",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "92%",
@@ -225,7 +237,8 @@ const data = [
       "yearMovie": 1995,
       "directorMovie": "Irwin Winkler",
       "productionCompany": "Columbia Pictures",
-      "genreMovie": "Thriller"
+      "genreMovie": "Thriller",
+      "genreValue": "thriller"
     },
     "extraInfo": {
       "rottenTomatoesScore": "36%",
@@ -243,7 +256,8 @@ const data = [
       "yearMovie": 2013,
       "directorMovie": "Cullen Hoback",
       "productionCompany": "Hybrid Cinema",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "78%",
@@ -261,7 +275,8 @@ const data = [
       "yearMovie": 1983,
       "directorMovie": "John Badham",
       "productionCompany": "United Artists",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
@@ -279,7 +294,8 @@ const data = [
       "yearMovie": 2015,
       "directorMovie": "Lesley Chilcott",
       "productionCompany": "FilmBuff",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "Not available",
@@ -297,7 +313,8 @@ const data = [
       "yearMovie": 2014,
       "directorMovie": "Jonathan Schiefer",
       "productionCompany": "Diginuke",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "Not available",
@@ -315,7 +332,8 @@ const data = [
       "yearMovie": 2019,
       "directorMovie": "Karim Amer, Jehane Noujaim",
       "productionCompany": "Netflix",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "86%",
@@ -333,7 +351,8 @@ const data = [
       "yearMovie": 2018,
       "directorMovie": "Hans Block, Moritz Riesewieck",
       "productionCompany": "Gebrueder Beetz Filmproduktion",
-      "genreMovie": "Documental"
+      "genreMovie": "Documental",
+      "genreValue": "documental"
     },
     "extraInfo": {
       "rottenTomatoesScore": "84%",
@@ -351,7 +370,8 @@ const data = [
       "yearMovie": 2001,
       "directorMovie": "Mamoru Oshii",
       "productionCompany": "Bandai Visual",
-      "genreMovie": "Animación"
+      "genreMovie": "Animación",
+      "genreValue": "animation"
     },
     "extraInfo": {
       "rottenTomatoesScore": "96%",
@@ -369,7 +389,8 @@ const data = [
       "yearMovie": 1968,
       "directorMovie": "Stanley Kubrick",
       "productionCompany": "Metro-Goldwyn-Mayer",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "93%",
@@ -387,7 +408,8 @@ const data = [
       "yearMovie": 2008,
       "directorMovie": "Andrew Stanton",
       "productionCompany": "Walt Disney Pictures",
-      "genreMovie": "Animación"
+      "genreMovie": "Animación",
+      "genreValue": "animation"
     },
     "extraInfo": {
       "rottenTomatoesScore": "95%",
@@ -405,7 +427,8 @@ const data = [
       "yearMovie": 2018,
       "directorMovie": "Steven Spielberg",
       "productionCompany": "Warner Bros.",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "72%",
@@ -423,7 +446,8 @@ const data = [
       "yearMovie": 1999,
       "directorMovie": "The Wachowskis",
       "productionCompany": "Warner Bros.",
-      "genreMovie": "Ciencia ficción"
+      "genreMovie": "Ciencia ficción",
+      "genreValue": "fiction"
     },
     "extraInfo": {
       "rottenTomatoesScore": "88%",
@@ -431,8 +455,8 @@ const data = [
       "durationMovie": "136 minutos"
     }
   }
-  
+
 ];
 
-console.log("Estoy mostrando la data", data);
+//console.log("Estoy mostrando la data", data);
 export default data;

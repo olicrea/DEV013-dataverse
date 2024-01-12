@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>MovieDev</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-        <h1>MovieDev</h1>
-        <!-- <label for="genre">Filtrar por género</label>
-        <select name="genre" id="genre" data-testid="select-filter">
-          <option value="" selected disabled>seleccione el filtro</option>
-          <option value="Ficción">Ciencia Ficción</option>
-          <option value="Animación">Animación</option>
-          <option value="Thriller">Thriller</option>
-          <option value="Documental">Documental</option>
-          <option value="Drama">Drama</option>
-        </select>
-    
-        <label for="alfa">Ordenar alfabéticamente</label>
-        <select name="alfa" id="alfa" data-testid="select-sort">
-          <option value="" selected disabled>Orden</option>
-          <option value="asc">A - Z</option>
-          <option value="desc">Z - A</option>
-        </select>
-    
-        <label for="year">Ordenar por año</label>
-        <select name="year" id="year" data-testid="select-sort-year">
-          <option value="" selected disabled>Orden</option>
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
-        </select>
 
-        <button data-testid="button-clear">Limpiar</button> -->
-    </header> 
-    
-    <main>
-      <h2 class="variable"></h2>
-    </main>
+<head>
+  <meta charset="utf-8">
+  <title>MovieDev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <div id="root"></div>
-    <footer>M.O.Dev</footer>
-    <script src="main.js" type="module"></script>
-  </body>
+<body>
+  <header>
+    <div class="title">
+      <h1>MovieDev</h1>
+    </div>
+    <div class="inputs">
+      <label for="genre">Filtrar por género</label>
+      <select name="genre" id="genre" data-testid="select-filter">
+        <option value="a" selected disabled>Selecciona filtro</option>
+        <option value="fiction">Ciencia Ficción</option>
+        <option value="animation">Animación</option>
+        <option value="thriller">Thriller</option>
+        <option value="documental">Documental</option>
+        <option value="drama">Drama</option>
+      </select>
+
+      <label for="alfa">Ordenar alfabéticamente</label>
+      <select name="alfa" id="alfa" data-testid="select-sort">
+        <option value="a" selected disabled>Selecciona orden</option>
+        <option value="asc">A - Z</option>
+        <option value="desc">Z - A</option>
+      </select>
+
+      <label for="year">Ordenar por año</label>
+      <select name="year" id="year" data-testid="select-sort-year">
+        <option value="a" selected disabled>Selecciona orden</option>
+        <option value="asc">Ascendente</option>
+        <option value="desc">Descendente</option>
+      </select>
+
+      <label for="estadísticas">Estadísticas</label>
+      <select name="estadisticas" id="estadisticas">
+        <option value="a" selected disabled>Selecciona estadística</option>
+        <option value="score">Por puntuaciones</option>
+        <option value="country">Por países</option>
+      </select>
+
+      <button id="btn" data-testid="button-clear">Limpiar</button>
+
+    </div>
+
+  </header>
+
+  <main>
+    <h2 class="variable"></h2>
+  </main>
+
+  <div id="root"></div>
+  <footer>M.O.Dev</footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>

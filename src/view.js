@@ -8,7 +8,8 @@ export const renderItems = (data) => {
     html += `<li class="cards" itemscope itemtype="movie">
               <dl>
                 <img src="${film.imageUrl}" alt=${film.name} />
-                <dt></dt><dd class="tittle" itemprop="name"><strong>${film.name}</strong></dd>
+                <dt></dt><dd class="name-movie" itemprop="name"><strong>${film.name}</strong></dd>
+                <dt></dt><dd class="year-movie" itemprop="yearMovie"><strong>(${film.facts.yearMovie})</strong></dd>
                 <dt></dt><dd class= "info-movie" itemprop="shortDescription">${film.shortDescription}</dd>
                 <dt></dt><dd itemprop="genreMovie"><strong>Género: </strong>${film.facts.genreMovie}</dd>
 

@@ -18,9 +18,18 @@ export const sortData = (data, sortBy, sortOrder) => {
 
 //Función para calcular frecuencia de países.
 export const computeStats = (data) => {
-  const countryFrequency = data.reduce(function (acumulador, movie) {
+  const countryFrequencies = data.map((movie) => {
     const country = movie.extraInfo.countryMovie;
     const name = movie.name;
+
+    return {
+      country,
+      movieName: name,
+    };
+  });
+
+  const countryFrequency = countryFrequencies.reduce((acumulador, movie) => {
+    const country = movie.country;
 
     // Verificar si el país ya está en el acumulador
     if (!acumulador[country]) {

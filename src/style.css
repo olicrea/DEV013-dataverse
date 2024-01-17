@@ -13,7 +13,7 @@ header {
 .open-menu {
     display: block;
     border: 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
     background-color: transparent;
     cursor: pointer;
     color: white;
@@ -61,6 +61,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     margin: 7px;
+    box-sizing: border-box;
     background-color: #0CE3E8;
     text-align: center;
     font-size: 16px;

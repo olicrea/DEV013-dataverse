@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <title>MovieDev</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,7 +11,8 @@
   <header>
     <div class="title">
       <h1>MovieDev</h1>
-      <button id="abrir" class="open-menu"><i class="bi bi-list"></i></button>    </div>
+      <button id="abrir" class="open-menu">Abrir</button>    
+    </div>
   </header>
 
   <div class="inputs">
@@ -43,8 +43,10 @@
     <label for="statistics">Estadísticas</label>
     <select name="statistics" id="statistics">
       <option value="a" selected disabled>Selecciona estadística</option>
-      <option value="score">Por puntuaciones</option>
-      <option value="country">Por países</option>
+      <option value="score50">50% y 70% en RT</option>
+      <option value="score70">70% y 90% en RT</option>
+      <option value="score90">90% y 100% en RT</option>
+      <option value="country">Películas por país</option>
     </select>
 
     <button id="btn" data-testid="button-clear">Limpiar</button>

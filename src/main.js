@@ -103,7 +103,7 @@ openMenu.addEventListener("click", function () {
 });
 
 
-const btnStatistics = document.getElementById("statistics");
+const btnStatistics = document.querySelector("#statistics");
 btnStatistics.addEventListener("change", () => {
   const statistics = computeStats(data);
 
@@ -135,7 +135,7 @@ btnStatistics.addEventListener("change", () => {
 });
 
 
-const selectStadistics = document.querySelector('#statistics');
+const selectStadistics = document.querySelector("#statistics");
 const stadisticsButton = document.querySelector("#statistics");
 //Función del select Stadistics
 //let stadistics = [];
@@ -154,9 +154,9 @@ selectStadistics.addEventListener('change', (e) => {
     return renderAndAppendToRootStadistics(orderData.scoreOut90, "Puntuación Entre 90% y 100% de Aprobación", orderData.perOut90);
   }
 })
+const estadistica = computeStatsScore(data);
 
 stadisticsButton.addEventListener("click", function () {
-  const estadistica = computeStatsScore(data);
   renderAndAppendToRoot(estadistica);
   //Escuchar click y cambiar display:none/flex
   const elementClick = document.querySelector(".header-icons");

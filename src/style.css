@@ -6,11 +6,27 @@
     overflow-x: hidden;
 }
 
+header {
+    margin: 0;
+}
+
+.open-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+select {
+    margin: 0;
+}
+
 .title {
     padding: 7px;
     width: 100vw;
     height: 75px;
-    font-family: 'Roboto Mono', monospace;
     color: white;
     background-color: #FC1068;
     text-align: center;
@@ -19,7 +35,8 @@
 }
 
 .inputs {
-    display: flex;
+    position: absolute;
+    display: none;
     flex-direction: column;
     width: 200px;
     background-color: #FCAB10;
@@ -31,6 +48,7 @@
     color: #1F0441;
     padding: 7px;
     border-radius: 0 0 10px 0;
+    gap: 1rem;
 }
 
 body {
@@ -81,6 +99,17 @@ ul {
     margin: 10px;
 }
 
+.cards-two {
+    background-color: #F9CE07;
+    width: 260px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 7px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
 footer {
     background-color: #FCAB10;
     color:#1F0441;
@@ -88,4 +117,7 @@ footer {
     text-align: center;
     padding: 5px;
     font-family: 'Titan One', sans-serif;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }

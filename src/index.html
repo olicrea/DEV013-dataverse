@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <title>MovieDev</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,44 +12,44 @@
   <header>
     <div class="title">
       <h1>MovieDev</h1>
-    </div>
-    <div class="inputs">
-      <label for="genre">Filtrar por género</label>
-      <select name="genre" id="genre" data-testid="select-filter">
-        <option value="a" selected disabled>Selecciona filtro</option>
-        <option value="fiction">Ciencia Ficción</option>
-        <option value="animation">Animación</option>
-        <option value="thriller">Thriller</option>
-        <option value="documental">Documental</option>
-        <option value="drama">Drama</option>
-      </select>
-
-      <label for="alfa">Ordenar alfabéticamente</label>
-      <select name="alfa" id="alfa" data-testid="select-sort">
-        <option value="a" selected disabled>Selecciona orden</option>
-        <option value="asc">A - Z</option>
-        <option value="desc">Z - A</option>
-      </select>
-
-      <label for="year">Ordenar por año</label>
-      <select name="year" id="year" data-testid="select-sort-year">
-        <option value="a" selected disabled>Selecciona orden</option>
-        <option value="asc">Ascendente</option>
-        <option value="desc">Descendente</option>
-      </select>
-
-      <label for="estadísticas">Estadísticas</label>
-      <select name="estadisticas" id="estadisticas">
-        <option value="a" selected disabled>Selecciona estadística</option>
-        <option value="score">Por puntuaciones</option>
-        <option value="country">Por países</option>
-      </select>
-
-      <button id="btn" data-testid="button-clear">Limpiar</button>
-
-    </div>
-
+      <button id="abrir" class="open-menu"><i class="bi bi-list"></i></button>    </div>
   </header>
+
+  <div class="inputs">
+    <label for="genre">Filtrar por género</label>
+    <select name="genre" id="genre" data-testid="select-filter">
+      <option value="a" selected disabled>Selecciona filtro</option>
+      <option value="fiction">Ciencia Ficción</option>
+      <option value="animation">Animación</option>
+      <option value="thriller">Thriller</option>
+      <option value="documental">Documental</option>
+      <option value="drama">Drama</option>
+    </select>
+
+    <label for="alfa">Ordenar alfabéticamente</label>
+    <select name="alfa" id="alfa" data-testid="select-sort">
+      <option value="a" selected disabled>Selecciona orden</option>
+      <option value="asc">A - Z</option>
+      <option value="desc">Z - A</option>
+    </select>
+
+    <label for="year">Ordenar por año</label>
+    <select name="year" id="year" data-testid="select-sort-year">
+      <option value="a" selected disabled>Selecciona orden</option>
+      <option value="asc">Ascendente</option>
+      <option value="desc">Descendente</option>
+    </select>
+
+    <label for="statistics">Estadísticas</label>
+    <select name="statistics" id="statistics">
+      <option value="a" selected disabled>Selecciona estadística</option>
+      <option value="score">Por puntuaciones</option>
+      <option value="country">Por países</option>
+    </select>
+
+    <button id="btn" data-testid="button-clear">Limpiar</button>
+
+  </div>
 
   <main>
     <h2 class="variable"></h2>

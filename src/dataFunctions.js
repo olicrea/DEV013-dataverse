@@ -1,19 +1,9 @@
 // Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
 
 export const filterData = (data, filterBy, value) => {
-  /*filterData(data, filterBy, value): esta función recibe tres parámetros. El primer parámetro, data, nos entrega los datos. El segundo parámetro, filterBy, nos dice con respecto a cuál de los campos de la data se quiere filtrar. El tercer parámetro, value, indica el valor de campo que queremos filtrar.*/
-
-  const filterMovie = data.filter(film => film.facts[filterBy] === value);  //Accediendo a la propiedad 'genreMovie' de manera dinámica usando la notación de corchetes
-  // return filterMovie
-  //Pasar el renderizado al view.js
+  const filterMovie = data.filter(film => film.facts[filterBy] === value); 
   return filterMovie;
 };
-
-/*sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. El primer parámetro, data, nos entrega los datos. El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. El tercer parámetro, sortOrder, indica si se quiere ordenar de manera ascendente o descendente.
-
-computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para ser mostrados de acuerdo a la data proporcionada, esta función debe usar el método reduce.*/
-
-
 
 export const sortData = (data, sortBy, sortOrder) => {
   const sortedData = data.sort((a, b) => {
@@ -31,20 +21,24 @@ export const sortData = (data, sortBy, sortOrder) => {
       }
     }
   });
-
   return sortedData;
 };
-
+/*
 export const computeStats = (data) => {
   //  Quitar porcentaje en score   data.extraInfo.rottenTomatoesScore
   const scoreWithoutPerc = data.map((film) => parseFloat(film.extraInfo.rottenTomatoesScore));
-  //Tres array filtrado de acuerdo
+  
   const scoreOut50 = scoreWithoutPerc.filter((film) => {
     return 50 <= film && film < 70;
   });
+  console.log("muestro array sobre 50: "+ scoreOut50)
+  //console.log("array de pelis con puntajw mayor a 50 y menor 70: "+ scoreOut50 );
+  console.log(typeof(scoreOut50))
+
   const scoreOut70 = scoreWithoutPerc.filter((film) => {
     return 70 <= film && film < 90;
   });
+  console.log("muestro array sobre 70: "+ scoreOut70)
   const scoreOut90 = scoreWithoutPerc.filter((film) => {
     return 90 <= film && film <= 100;
   });
@@ -58,11 +52,61 @@ export const computeStats = (data) => {
   const perOut90 = Math.round((scoreOut90.length * 100) / data.length);
   console.log(perOut90)
   return {
-    scoreOut50
-    //scoreOut70,
+    //scoreOut50
+    scoreOut70,
     //scoreOut90,
   };
-}
+}*/
+
+export const computeStats = (data) => {
+  //  Quitar porcentaje en score   data.extraInfo.rottenTomatoesScore
+  const scoreOut50 = data.filter((film) => {
+    const score = parseFloat(film.extraInfo.rottenTomatoesScore);
+    return 50 <= score && score < 70;
+  });
+
+  console.log("Array de películas con puntaje mayor a 50 y menor a 70:");
+  console.log(scoreOut50);
+
+  const scoreOut70 = data.filter((film) => {
+    const score = parseFloat(film.extraInfo.rottenTomatoesScore);
+    return 70 <= score && score < 90;
+  });
+
+  console.log("Array de películas con puntaje mayor a 70 y menor a 90:");
+  console.log(scoreOut70);
+
+  const scoreOut90 = data.filter((film) => {
+    const score = parseFloat(film.extraInfo.rottenTomatoesScore);
+    return 90 <= score && score <= 100;
+  });
+
+  console.log("Array de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
+  console.log(scoreOut90);
+
+  const perOut50 = Math.round((scoreOut50.length * 100) / data.length);
+  console.log("Porcentaje de películas con puntaje mayor a 50 y menor a 70:");
+  console.log(perOut50);
+
+  const perOut70 = Math.round((scoreOut70.length * 100) / data.length);
+  console.log("Porcentaje de películas con puntaje mayor a 70 y menor a 90:");
+  console.log(perOut70);
+
+  const perOut90 = Math.round((scoreOut90.length * 100) / data.length);
+  console.log("Porcentaje de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
+  console.log(perOut90);
+
+  return {
+    scoreOut50,
+    scoreOut70,
+    scoreOut90,
+    perOut50,
+    perOut70,
+    perOut90
+  };
+};
+
+
 
 
 

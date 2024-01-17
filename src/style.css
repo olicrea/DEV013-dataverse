@@ -1,28 +1,67 @@
-@import url('https://fonts.cdnfonts.com/css/config-ultra');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Titan+One&display=swap');
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
-header {
+header{
+    display: flex;
     background-color: #FC1068;
-    padding: 7px;
-    color: white;
     width: 100vw;
-    height: 100px;
-    font-family: 'Roboto Mono', monospace;
+    height: 10vh;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-h1 {
+
+.title {
+    padding: 7px;
+    width: 100vw;
+    height: 75px;
+    color: white;
     text-align: center;
     font-family: 'Titan One', sans-serif;
-    font-size: 40px;
-    margin-bottom: 10px;  
-    margin-top: 15px;                      
+    font-size: 20px;
+    flex-direction: row;
 }
+
+summary {
+    list-style: none;
+    margin: 10px;
+}
+.select-list li{
+    padding-right: 25px;
+}
+
+.header-icons {
+    flex-shrink: 0; /* Evita que el menú desplegado afecte la altura */
+}
+
+
+
+
+
+.inputs {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    background-color: #FCAB10;
+    align-content: center;
+    font-family: 'Roboto Mono', monospace;
+    align-items:flex-end;
+    font-size: 14px;
+    text-align: end;
+    color: #1F0441;
+    padding: 39px;
+    border-radius: 0 0 10px 0;
+    justify-content: start;
+    position: absolute;
+}
+
+
+
+
 
 body {
     background-color: #1F0441;
@@ -44,7 +83,8 @@ img {
     height: 17vw;
     margin-bottom: 15px;
     border-radius: 10px;
-
+    max-width: 200px;
+    height: auto;
 }
 
 ul {
@@ -55,13 +95,22 @@ ul {
     padding: 20px;
 }
 
-.tittle{
+.name-movie {
     font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.info-movie {
     margin-bottom: 15px;
 }
 
-.info-movie{
-    margin-bottom: 15px;
+.year-movie {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#btn {
+    margin: 10px;
 }
 
 footer {
@@ -71,4 +120,17 @@ footer {
     text-align: center;
     padding: 5px;
     font-family: 'Titan One', sans-serif;
+}
+
+h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    color: rgb(245, 229, 83);
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }

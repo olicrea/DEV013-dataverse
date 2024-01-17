@@ -61,40 +61,40 @@ export const computeStats = (data) => {
 export const computeStats = (data) => {
   //  Quitar porcentaje en score   data.extraInfo.rottenTomatoesScore
   const scoreOut50 = data.filter((film) => {
-    const score = parseFloat(film.extraInfo.rottenTomatoesScore);
+    const score = parseFloat(film.extraInfo.rottenTomatoesScore); 
     return 50 <= score && score < 70;
   });
 
-  console.log("Array de películas con puntaje mayor a 50 y menor a 70:");
-  console.log(scoreOut50);
+  //console.log("Array de películas con puntaje mayor a 50 y menor a 70:");
+  //console.log(scoreOut50);
 
   const scoreOut70 = data.filter((film) => {
     const score = parseFloat(film.extraInfo.rottenTomatoesScore);
     return 70 <= score && score < 90;
   });
 
-  console.log("Array de películas con puntaje mayor a 70 y menor a 90:");
-  console.log(scoreOut70);
+  //console.log("Array de películas con puntaje mayor a 70 y menor a 90:");
+  //console.log(scoreOut70);
 
   const scoreOut90 = data.filter((film) => {
     const score = parseFloat(film.extraInfo.rottenTomatoesScore);
     return 90 <= score && score <= 100;
   });
 
-  console.log("Array de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
-  console.log(scoreOut90);
+  //console.log("Array de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
+  //console.log(scoreOut90);
 
   const perOut50 = Math.round((scoreOut50.length * 100) / data.length);
-  console.log("Porcentaje de películas con puntaje mayor a 50 y menor a 70:");
-  console.log(perOut50);
+  //console.log("Porcentaje de películas con puntaje mayor a 50 y menor a 70:");
+  //console.log(perOut50);
 
   const perOut70 = Math.round((scoreOut70.length * 100) / data.length);
-  console.log("Porcentaje de películas con puntaje mayor a 70 y menor a 90:");
-  console.log(perOut70);
+  //console.log("Porcentaje de películas con puntaje mayor a 70 y menor a 90:");
+  //console.log(perOut70);
 
   const perOut90 = Math.round((scoreOut90.length * 100) / data.length);
-  console.log("Porcentaje de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
-  console.log(perOut90);
+  //console.log("Porcentaje de películas con puntaje mayor o igual a 90 y menor o igual a 100:");
+  //console.log(perOut90);
 
   return {
     scoreOut50,

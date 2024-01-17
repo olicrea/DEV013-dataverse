@@ -57,6 +57,7 @@ summary {
     border-radius: 0 0 10px 0;
     justify-content: start;
     position: absolute;
+    gap: 1rem;
 }
 
 
@@ -124,13 +125,13 @@ footer {
 
 h2{
     color: white;
-    font-size: 60px;
+    font-size: 25px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 h4{
     color: rgb(245, 229, 83);
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Mono', monospace;
 }

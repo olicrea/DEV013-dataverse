@@ -65,19 +65,21 @@ selectElementAlfa.addEventListener("change", (e) => {
 //Función del select Stadistics
 //let stadistics = [];
 selectStadistics.addEventListener('change', (e) => {
-  orderData = []
+  // orderData = [];
   selectFilter.setAttribute('disabled', 'true');
   //console.log(e.target.value)
+  const resultComputStats = computeStats(data);
+  // console.log(resultComputStats);
   if(e.target.value === "score50"){
-    orderData = computeStats(data);
-    console.log("Data order: "+orderData)
-    return renderAndAppendToRootStadistics(orderData.scoreOut50,"Puntuación Entre 50% y 70% de Aprobación", orderData.perOut50);
+    //console.log("Data order: "+orderData)
+    orderData = resultComputStats.scoreOut50
+    return renderAndAppendToRootStadistics(resultComputStats.scoreOut50,"Puntuación Entre 50% y 70% de Aprobación", resultComputStats.perOut50);
   } else if(e.target.value === "score70"){
-    orderData = computeStats(data);
-    return renderAndAppendToRootStadistics(orderData.scoreOut70,"Puntuación Entre 70% y 90% de Aprobación", orderData.perOut70);
+    orderData = resultComputStats.scoreOut70
+    return renderAndAppendToRootStadistics(resultComputStats.scoreOut70,"Puntuación Entre 70% y 90% de Aprobación", resultComputStats.perOut70);
   } else if(e.target.value === "score90"){
-    orderData = computeStats(data);
-    return renderAndAppendToRootStadistics(orderData.scoreOut90,"Puntuación Entre 90% y 100% de Aprobación", orderData.perOut90);
+    orderData = resultComputStats.scoreOut90
+    return renderAndAppendToRootStadistics(resultComputStats.scoreOut90,"Puntuación Entre 90% y 100% de Aprobación", resultComputStats.perOut90);
   } 
 })
 
@@ -88,7 +90,7 @@ button.addEventListener("click", function(){
     unselect.value='a'
     selectFilter.removeAttribute('disabled');
     selectStadistics.removeAttribute('disabled');
-    orderData=[];
+    orderData=data;
   })
   renderAndAppendToRoot(data)
 })

@@ -45,7 +45,7 @@ btnFilterGenre.addEventListener("change", (e) => {
   toggleMovieCards();
 
 
-  //console.log("Estoy ordenando por género", filterGenre);
+  console.log("Estoy ordenando por género", filterGenre);
 }
 );
 

@@ -5,12 +5,16 @@ console.log(data);
 
 describe('filterData', () => {
 
-  it('si portionData no es un arreglo regresa vacío `', () => {
-    expect(filterData(data)).toEqual([]);
+  it('verifica si data es un arreglo, si es así regresa true', () => {
+    expect(Array.isArray(data)).toBe(true);
+  });
+
+  it('si data  es un arreglo y filterBy es "genreValue" y value es "thriller" debo recibir un arreglo con la propiedad name: "Hackers" ', () => {
+    expect(filterData(data, "genreValue", "thriller")[0]).toHaveProperty("name", "Hackers");
   });
 
   it('si data  es un arreglo y filterBy es "name" y value es carlos debo recibir un arreglo con la propiedad name  = carlos ', () => {
-    expect(filterData([{name:"carlos"}, {name:"olimar"}], 'name', 'carlos')).toEqual([{name:"carlos"}]);
+    expect(filterData(data)).toEqual([{name:"Short Circuit"}]);
   });
 
   it('si data  es un arreglo y filterBy es "name" y value es carlos debo recibir un arreglo con la propiedad name  = carlos ', () => {

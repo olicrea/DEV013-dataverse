@@ -6,13 +6,13 @@ export const filterData = (data, filterBy, value) => {
 
 // Testear:
 // Si la data es un arreglo
-// Si el filterBy ingresado no existe
-// Si el value ingresado es ""
-// portionData como parámetro data arroja tal resultado al filtrar: 
+// Si el filterBy ingresado no existe, return []
+// Si el value ingresado es "", arroja ??
+// data como parámetro data arroja tal resultado al filtrar: 
 
 // if(!data){
-  //   return []
-  // }
+//   return []
+// }
 // // if(!filterBy) {
 //  return []
 //}

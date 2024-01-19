@@ -3,6 +3,10 @@ import { renderItems, renderItemsStadistics } from './view.js';
 import data from './data/dataset.js';
 let currentMovies = [...data];
 
+const toggleMovieCards = () => {
+  const movieCards = document.querySelector(".cards");
+  movieCards.classList.toggle("cards-menu");
+}
 
 function renderAndAppendToRoot(data) {
   const rootElement = document.querySelector('#root');
@@ -16,11 +20,20 @@ renderAndAppendToRoot(data);
 function renderAndAppendToRootStadistics(data, title, percent) {
   const rootElement = document.querySelector('#root');
   if (rootElement) {
-    const renderedHTML = renderItemsStadistics(data,title, percent);
+    const renderedHTML = renderItemsStadistics(data, title, percent);
     rootElement.innerHTML = renderedHTML;
   }
 }
 
+const resetCardDiv = () => {
+  statisticsCountrySelect.selectedIndex = "";
+  if (cardDiv) {
+    cardDiv.style.display = 'none';
+    while (cardDiv.firstChild) {
+      cardDiv.removeChild(cardDiv.firstChild);
+    }
+  }
+};
 
 const btnFilterGenre = document.getElementById("genre");
 btnFilterGenre.addEventListener("change", (e) => {
@@ -28,6 +41,10 @@ btnFilterGenre.addEventListener("change", (e) => {
   const filterGenre = filterData(data, "genreValue", e.target.value);
   currentMovies = [...filterGenre];
   renderAndAppendToRoot(filterGenre);
+  resetCardDiv();
+  toggleMovieCards();
+
+
   //console.log("Estoy ordenando por género", filterGenre);
 }
 );
@@ -40,6 +57,10 @@ btnOrdenName.addEventListener("change", (e) => {
   currentMovies = [...orderedData];
   // console.log(ordenName);
   renderAndAppendToRoot(orderedData);
+  resetCardDiv();
+  toggleMovieCards();
+
+
   //console.log("Estoy ordenando alfabéticamente", ordenName);
 }
 );
@@ -51,18 +72,26 @@ btnOrderYear.addEventListener("change", (e) => {
   const orderYear = sortData(currentMovies, "yearMovie", e.target.value);
   currentMovies = [...orderYear];
   renderAndAppendToRoot(orderYear);
+  resetCardDiv();
+  toggleMovieCards();
+
+
   // console.log(ordenYear);
 }
 );
 
-
+// Este btn limpia los imputs en el menú de selección
 const btn = document.getElementById("btn");
 
+let statisticsCountrySelect = document.getElementById("statistics-country");
 const resetfilters = () => {
+  resetCardDiv();
+
   const genreSelect = document.getElementById("genre");
   const alfaSelect = document.getElementById("alfa");
   const yearSelect = document.getElementById("year");
   const statisticsSelect = document.getElementById("statistics");
+  statisticsCountrySelect = document.getElementById("statistics-country");
 
   if (genreSelect) {
     genreSelect.selectedIndex = "";
@@ -80,9 +109,14 @@ const resetfilters = () => {
     statisticsSelect.selectedIndex = "";
   }
 
-  const renderedHTML = renderItems(data);
+  if (statisticsCountrySelect) {
+    statisticsCountrySelect.selectedIndex = "";
+  }
+
   currentMovies = [...data];
-  document.querySelector("#root").innerHTML = renderedHTML;
+  renderAndAppendToRoot(data);
+  toggleMovieCards();
+
 
 };
 btn.addEventListener("click", resetfilters);
@@ -92,29 +126,53 @@ const openMenu = document.querySelector(".open-menu");
 let menuOpen = false;
 openMenu.addEventListener("click", function () {
   const menuInputs = document.querySelector(".inputs");
+  toggleMovieCards();
 
   if (!menuOpen) {
     menuInputs.style.display = "flex";
     menuOpen = true;
+    
   } else {
     menuInputs.style.display = "none";
     menuOpen = false;
   }
 });
 
+/*if (!menuOpen) {
+  menuInputs.style.display = "flex";
+  menuOpen = true;
+} setTimeout(function () {
+  menuInputs.style.display = "none";
+  menuOpen = false;
+}, 9000);
+});*/
 
-const btnStatistics = document.querySelector("#statistics");
+//crear una constante para que en la pantalla no aparezca ninguna tarjeta renderizada
+const resetViewport = () => {
+  currentMovies = [];
+  renderAndAppendToRoot(currentMovies);
+};
+
+let cardDiv;
+let statistics;
+const btnStatistics = document.querySelector("#statistics-country");
 btnStatistics.addEventListener("change", () => {
-  const statistics = computeStats(data);
+  resetViewport();
+  cardDiv = document.createElement("div");
+  cardDiv.className = "cards-two";
+
+  if (cardDiv) {
+    cardDiv.style.display = 'block'; 
+  }
+  statistics = computeStats(data);
 
   // Crear un div para la tarjeta de estadística por países
-  const cardDiv = document.createElement("div");
-  cardDiv.className = "cards-two";
-  document.body.appendChild(cardDiv);
+  //const positionHeader = document.querySelector("#position-header");
+  //document.body.insertBefore(cardDiv, positionHeader.nextSibling);
 
   // Crear un título para la data dentro del div
   const countryTitleParagraph = document.createElement("p");
-  countryTitleParagraph.textContent = "Películas por país";
+  countryTitleParagraph.textContent = "Películas por país:";
   cardDiv.appendChild(countryTitleParagraph);
 
   // Iterar sobre los resultados de computeStats para acumular películas por países
@@ -130,49 +188,63 @@ btnStatistics.addEventListener("change", () => {
     // Añadir el párrafo al div
     cardDiv.appendChild(countryInfoParagraph);
   }
+  const inputsElement = document.querySelector(".inputs");
 
-  console.log(statistics);
+  // Insertar el div después de ".inputs"
+  if (inputsElement && inputsElement.parentNode) {
+    inputsElement.parentNode.insertBefore(cardDiv, inputsElement.nextSibling);
+  }
+  currentMovies = [...data];
+
+  // Insertar el div después del primer hijo del body
+  //console.log(statistics);
 });
 
 
+let orderData = [];
 const selectStadistics = document.querySelector("#statistics");
-const stadisticsButton = document.querySelector("#statistics");
+//const stadisticsButton = document.querySelector("#statistics");
 //Función del select Stadistics
 //let stadistics = [];
-let orderData = [];
 selectStadistics.addEventListener('change', (e) => {
+  resetCardDiv();
+
+  orderData = [];
+  //btnFilterGenre.setAttribute('disabled', 'true');
   //console.log(e.target.value)
   if (e.target.value === "score50") {
     orderData = computeStatsScore(data);
-    console.log("Data order: " + orderData);
-    return renderAndAppendToRootStadistics(orderData.scoreOut50, "Puntuación Entre 50% y 70% de Aprobación", orderData.perOut50);
+    //console.log("Data order: " + orderData);
+    return renderAndAppendToRootStadistics(orderData.scoreOut50, "Puntuación entre 50% y 70% de aprobación.", orderData.perOut50);
   } else if (e.target.value === "score70") {
     orderData = computeStatsScore(data);
-    return renderAndAppendToRootStadistics(orderData.scoreOut70, "Puntuación Entre 70% y 90% de Aprobación", orderData.perOut70);
+    return renderAndAppendToRootStadistics(orderData.scoreOut70, "Puntuación entre 70% y 90% de aprobación.", orderData.perOut70);
   } else if (e.target.value === "score90") {
     orderData = computeStatsScore(data);
-    return renderAndAppendToRootStadistics(orderData.scoreOut90, "Puntuación Entre 90% y 100% de Aprobación", orderData.perOut90);
+    return renderAndAppendToRootStadistics(orderData.scoreOut90, "Puntuación entre 90% y 100% de aprobación.", orderData.perOut90);
   }
 })
-const estadistica = computeStatsScore(data);
+/*const estadistica = computeStatsScore(data);
 
 stadisticsButton.addEventListener("click", function () {
   renderAndAppendToRoot(estadistica);
+  resetCardDiv();
+
   //Escuchar click y cambiar display:none/flex
   const elementClick = document.querySelector(".header-icons");
   elementClick.addEventListener("click", function () {
     const elementDiv = document.querySelector(".inputs");
     if (elementDiv.style.display === "none") {
       elementDiv.style.display = "flex";
-      console.log(elementDiv);
+      //console.log(elementDiv);
     } else {
       elementDiv.style.display = "none";
-      console.log(elementDiv);
+      //console.log(elementDiv);
     }
 
   });
 
   computeStatsScore(data);
-  console.log(estadistica);
+  //console.log(estadistica);
 
-});
+});*/

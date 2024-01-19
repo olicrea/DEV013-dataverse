@@ -8,24 +8,25 @@
 </head>
 
 <body>
-  <header>
+  <header id="position-header">
     <div class="title">
       <h1>MovieDev</h1>
-      <button id="abrir" class="open-menu">Abrir</button>    
+      <button id="abrir" class="open-menu">Menú</button>
     </div>
   </header>
+  <div class="container">
 
-  <div class="inputs">
-    <label for="genre">Filtrar por género</label>
-    <select name="genre" id="genre" data-testid="select-filter">
-      <option value="a" selected disabled>Selecciona filtro</option>
+    <div class="inputs">
+      <label for="genre">Filtrar por género</label>
+      <select name="genre" id="genre" data-testid="select-filter">
+        <option value="a" selected disabled>Selecciona filtro</option>
       <option value="fiction">Ciencia Ficción</option>
       <option value="animation">Animación</option>
       <option value="thriller">Thriller</option>
       <option value="documental">Documental</option>
       <option value="drama">Drama</option>
     </select>
-
+    
     <label for="alfa">Ordenar alfabéticamente</label>
     <select name="alfa" id="alfa" data-testid="select-sort">
       <option value="a" selected disabled>Selecciona orden</option>
@@ -40,24 +41,30 @@
       <option value="desc">Descendente</option>
     </select>
 
-    <label for="statistics">Estadísticas</label>
+    <label for="statistics">Estadísticas RT</label>
     <select name="statistics" id="statistics">
-      <option value="a" selected disabled>Selecciona estadística</option>
+      <option value="a" selected disabled>Estadísticas Rotten Tomatoes</option>
       <option value="score50">50% y 70% en RT</option>
       <option value="score70">70% y 90% en RT</option>
       <option value="score90">90% y 100% en RT</option>
+    </select>
+    
+    <label for="statistics-country">Estadísticas por países</label>
+    <select name="statistics-country" id="statistics-country">
+      <option value="a" selected disabled>Estadísticas países</option>
       <option value="country">Películas por país</option>
     </select>
 
     <button id="btn" data-testid="button-clear">Limpiar</button>
 
   </div>
-
+  
   <main>
     <h2 class="variable"></h2>
   </main>
-
+  
   <div id="root"></div>
+</div>
   <footer>M.O.Dev</footer>
   <script src="main.js" type="module"></script>
 </body>

@@ -38,7 +38,7 @@ export const renderItemsStadistics = (data,title,percent) => {
   });
 
   html = `<h2>${title}</h2>
-          <h4>Estas Películas Representan el ${percent}% de la web</h4> 
+          <h4>Estas películas representan el ${percent}% de la data de MovieDev:</h4> 
             <ul>${html}</ul>`;
   return html;
 };

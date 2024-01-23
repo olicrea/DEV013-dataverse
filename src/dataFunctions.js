@@ -58,7 +58,7 @@ export const computeStats = (data) => {
   };
 }*/
 
-export const computeStats = (data) => {
+export const computeStatsScore = (data) => {
   //  Quitar porcentaje en score   data.extraInfo.rottenTomatoesScore
   const scoreOut50 = data.filter((film) => {
     const score = parseFloat(film.extraInfo.rottenTomatoesScore); 
@@ -105,6 +105,35 @@ export const computeStats = (data) => {
     perOut90
   };
 };
+
+export const computeStats = (data) => {
+  const countryFrequencies = data.map((movie) => {
+    const country = movie.extraInfo.countryMovie;
+    const name = movie.name;
+    
+    return {
+      country,
+      movieName: name,
+    };
+  });
+  const countryFrequency = countryFrequencies.reduce((acumulador, movie) => {
+    const country = movie.country;
+    // Verificar si el país ya está en el acumulador
+    if (!acumulador[country]) {
+      acumulador[country] = {
+        count: 0,
+        movies: []
+      };
+    }
+    // Incrementar la frecuencia y agregar la película a la lista
+    acumulador[country].count += 1;
+    acumulador[country].movies.push(movie.movieName);
+    return acumulador;
+  }, {});
+  // Devolver la frecuencia de películas por país directamente
+  return countryFrequency;
+};
+
 
 
 

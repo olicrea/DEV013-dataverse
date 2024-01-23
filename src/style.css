@@ -7,19 +7,18 @@
 
 header{
     display: flex;
-    background-color: #FC1068;
     width: 100vw;
     height: 10vh;
     align-items: center;
     flex-shrink: 0;
+    background-color: #FCAB10;
 }
-
 
 .title {
     padding: 7px;
     width: 100vw;
     height: 75px;
-    color: white;
+    color: #1F0441;
     text-align: center;
     font-family: 'Titan One', sans-serif;
     font-size: 20px;
@@ -29,16 +28,19 @@ header{
 summary {
     list-style: none;
     margin: 10px;
+    cursor: pointer;
 }
-.select-list li{
-    padding-right: 25px;
-}
-
-.header-icons {
-    flex-shrink: 0; /* Evita que el menú desplegado afecte la altura */
+ul.select-list {
+    margin-left: 50px;
 }
 
-
+select{
+    background-color: #1F0441;
+    color: white;
+    cursor: pointer;
+    width: 165px;
+    text-align: center;
+}
 
 
 
@@ -58,11 +60,11 @@ summary {
     justify-content: start;
     position: absolute;
     gap: 1rem;
+    text-align: right;
 }
-
-
-
-
+ul,select,li{
+    text-align: right; 
+}
 
 body {
     background-color: #1F0441;
@@ -112,6 +114,13 @@ ul {
 
 #btn {
     margin: 10px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #1F0441;
+    border-color: #1F0441;
+    padding: 5px;
+    cursor: pointer;
 }
 
 footer {
@@ -135,3 +144,111 @@ h4{
     text-align: center;
     font-family: 'Roboto Mono', monospace;
 }
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        margin: 0;
+    }
+    /*.header-icons{
+        width: 50px; 
+        height: 50px;
+        transition: all 0.3s ease;
+    }*/
+    .title {
+        padding-top: 7px;
+        width: 100vw;
+        height: 65px;
+        color: #1F0441;
+        background-color: #FCAB10;
+        text-align: center;
+        font-family: 'Titan One', sans-serif;
+        font-size: 10px;
+    }
+    
+    body {
+      background-color: white;
+      color: #1F0441;
+      flex-grow: 1;
+    }
+    .inputs {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 130px;
+        background-color: #FCAB10;
+        font-family: 'Roboto Mono', monospace;
+        align-items:flex-end;
+        padding: 9px;
+        font-size: 12px;
+        color: #1F0441;
+        border-radius: 0 0 10px 0;
+        gap: 0.3rem;
+    }
+    img {
+        height: 14vw;
+        margin-bottom: 10px;
+        border-radius: 7px;
+    }
+    .cards {
+        width: 260px;
+        padding: 10px;
+        border-radius: 7px;
+        margin: 7px;
+        box-sizing: border-box;
+        background-color: #0CE3E8;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto Mono', monospace;
+        flex-direction: column;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        align-content: center;
+    }
+    h2{
+        margin-top: 15px;
+        color: #1F0441;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    h4{
+        color: #1F0441;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    select {
+        margin: 0;
+        width: 120px;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #1F0441;
+        cursor: pointer;
+        background-color: white;
+        text-align: center;
+    }
+    .cards-two {
+        background-color: #0CE3E8;
+        width: 160px;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Roboto Mono', monospace;
+        margin-top: 120px;
+        margin-left: 160px;
+        margin-bottom: 111px;
+    }
+  }

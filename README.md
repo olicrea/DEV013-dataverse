@@ -65,6 +65,7 @@ Estas funciones hacen que MovieDev sea una herramienta valiosa para aquellos int
 
 - **Estilo atractivo:** La interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
 
+![Imagen principal](/src/img/MovieDev.gif) 
 ---
 
 Con estas funcionalidades, MovieDev se presenta como una herramienta completa para explorar, descubrir y sumergirse en la rica variedad de películas relacionadas con la tecnología, ofreciendo una experiencia única y personalizada para cada usuario.
@@ -321,30 +322,30 @@ export default [
 #### Prompt utilizado
 A continuación se desglozará la estructura de la data utilizada en MovieDev:
 
-Desglose de Propiedades:
-id: Identificador único de la película.
+##### Desglose de Propiedades:
+**id:** Identificador único de la película.
 
-name: Título de la película ("Hackers").
+**name:** Título de la película ("Hackers").
 
-shortDescription: Breve descripción de la trama.
+**shortDescription:** Breve descripción de la trama.
 
-description: Descripción detallada de la película.
+**description:** Descripción detallada de la película.
 
-imageUrl: URL de la imagen de la película.
+**imageUrl:** URL de la imagen de la película.
 
-facts: Objeto que contiene información factual sobre la película:
+**facts:** Objeto que contiene información factual sobre la película:
 
-yearMovie: Año de lanzamiento.
-directorMovie: Director de la película.
-productionCompany: Compañía productora.
-genreMovie: Género de la película.
-genreValue: Valor adicional asociado al género (en este caso, "thriller").
-extraInfo: Información adicional sobre la película:
+**yearMovie:** Año de lanzamiento.
+**directorMovie:** Director de la película.
+**productionCompany:** Compañía productora.
+**genreMovie:** Género de la película.
+**genreValue:** Valor adicional asociado al género (en este caso, "thriller").
+**extraInfo:** Información adicional sobre la película:
 
-rottenTomatoesScore: Puntuación en Rotten Tomatoes.
-countryMovie: País de origen de la película.
-durationMovie: Duración de la película.
-Este objeto proporciona una representación completa y estructurada de la información relacionada con la película "Hackers". Puedes replicar esta estructura para agregar más películas al conjunto de datos.
+**rottenTomatoesScore:** Puntuación en Rotten Tomatoes.
+**countryMovie:** País de origen de la película.
+**durationMovie:** Duración de la película.
+Este objeto proporciona una representación completa y estructurada de la información relacionada con la película.
 
 #### Capturas del prompting
 

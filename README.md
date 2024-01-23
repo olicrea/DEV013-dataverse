@@ -14,6 +14,10 @@
 
 <img src="./src/img/home.png">
 
+#### Resultado para desktop
+![Alt text](image-1.png)
+
+
 En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona como una colección de tarjetas que abarcan 24 películas de los géneros: documental, thriller, ciencia ficción, drama y animación. Todos las películas vinculadas al fascinante mundo de la tecnología, pensando en nuestras usuarias ideales: "Desarrolladoras Web". La información recopilada se basa en un conjunto de datos generados con la colaboración de [ChatGPT](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial).
 
 ### Características principales
@@ -50,7 +54,9 @@ La página web **MovieDev** se centra en ofrecer tres funciones clave:
 
 - **Estilo atractivo:** la interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
   
-![Imagen principal](/src/img/MovieDev.gif) 
+#### Resultado movil
+![Alt text](image-2.png)
+(Pantalla responsive)
 
 ### Test unitarios:
 

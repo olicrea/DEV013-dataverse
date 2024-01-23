@@ -1,4 +1,4 @@
-import { filterData, sortData, computeStats} from './dataFunctions.js';
+import { filterData, sortData, computeStats, computeStatsScore} from './dataFunctions.js';
 import { renderItems, renderItemsStadistics} from './view.js';
 import data from './data/dataset.js';
 
@@ -26,6 +26,7 @@ const selectElementYear = document.querySelector("#year");
 const selectElementAlfa = document.querySelector("#alfa");
 const selectFilter = document.querySelector('#genre')
 const selectStadistics = document.querySelector('#stadistics')
+const selectStadisticsCountry = document.querySelector("#statistics-country")
 const button = document.querySelector('button[data-testid="button-clear"]');
 
 // Array para depositar la data que se filtrará,
@@ -68,7 +69,7 @@ selectStadistics.addEventListener('change', (e) => {
   // orderData = [];
   selectFilter.setAttribute('disabled', 'true');
   //console.log(e.target.value)
-  const resultComputStats = computeStats(data);
+  const resultComputStats = computeStatsScore(data);
   // console.log(resultComputStats);
   if(e.target.value === "score50"){
     //console.log("Data order: "+orderData)
@@ -81,6 +82,17 @@ selectStadistics.addEventListener('change', (e) => {
     orderData = resultComputStats.scoreOut90
     return renderAndAppendToRootStadistics(resultComputStats.scoreOut90,"Puntuación Entre 90% y 100% de Aprobación", resultComputStats.perOut90);
   } 
+})
+
+//Función del select Stadistics for Country
+selectStadisticsCountry.addEventListener("change", (e) => {
+  selectFilter.setAttribute("disable", "true");
+  const resultComputStatsCountry = computeStats(data);
+  cardDiv = document.createElement("div");
+  cardDiv.className = "cards-two";
+
+  if (cardDiv) {
+    cardDiv.style.display = 'block'; 
 })
 
 

@@ -3,10 +3,10 @@
 ## Acerca de la Página Web
 
 * [1. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Funcionalidades](#4-funcionalidades)
-* [4. Consideraciones técnicas](#5-consideraciones-técnicas)
-* [5. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
+* [2. Funcionalidades](#4-funcionalidades)
+* [3. Consideraciones técnicas](#5-consideraciones-técnicas)
+* [4. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
+* [5. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 
 ***
 
@@ -65,6 +65,10 @@ Estas funciones hacen que MovieDev sea una herramienta valiosa para aquellos int
 
 - **Estilo atractivo:** La interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
 
+### Test Unitario de Pruebas:
+
+MovieDev fue elaborada en conjunto de un test de pruebas unitarias en formato garantizando un funcionamiento óptimo de sus funciones de manera individual.
+
 ![Imagen principal](/src/img/MovieDev.gif) 
 ---
 
@@ -121,8 +125,11 @@ como toda la configuración de dependencias:
    └── tests-read-only
 
 ```
+### Control de Pruebas Unitarias
 
-## 6. Criterios de aceptación mínimos del proyecto
+MovieDev fue desarrollada en conjunto con un exhaustivo conjunto de pruebas unitarias en formato Jest, una herramienta ampliamente reconocida para la realización de pruebas en proyectos JavaScript. La ventaja clave de emplear pruebas unitarias radica en su capacidad para verificar la funcionalidad correcta de las diversas funciones y la eficaz modularización del código. Durante el proceso de prueba, nos enfocamos en cada componente individual, asegurándonos de que cumpliera con su propósito específico y de que la interacción entre ellos fuera coherente. Estas pruebas no solo ayudaron a identificar y corregir posibles errores, sino que también garantizaron la estabilidad y fiabilidad del sistema en su conjunto. Al incorporar el enfoque de prueba desde las etapas iniciales del desarrollo, pudimos abordar de manera proactiva cualquier inconveniente, lo que condujo a un código más robusto y a una aplicación MovieDev más confiable y funcional.
+
+## 4. Criterios de aceptación mínimos del proyecto
 
 ### Criterios de código
 
@@ -234,8 +241,8 @@ npm run test:oas // Esto es para correr todos los tests de OAs
 
 #### Generación de datos 
 
-Esta data tiene una estructura archivo javascript. Este archivo, exporta un arreglo con 24 objetos. Y la estructura de cada objeto
-debe ser la siguiente:
+Esta data tiene una estructura archivo javascript. Este archivo, exporta un arreglo con 24 objetos y la estructura de cada objeto
+es la siguiente:
 
 * `id`: Identificador único (no pueden haber dos elementos con el mismo `id`).
   Debe ser un string de no más de 32 characteres, en minúscula, compuesto solo
@@ -249,71 +256,31 @@ debe ser la siguiente:
 * `imageUrl`: URL de la imagen. Esta imagen será generada a través de alguna
   herramienta basada en inteligencia artifical. Una vez generada la imagen,
   y guardada en tu repo, deberás agregar la URL en este campo.
-* `facts`: Un objeto con al menos **3** "hechos" o "info" sobre este elemento, en
-  formato `"nombre": "valor"`, por ejemplo:
+* `facts`: Un objeto con al menos **3** "hechos" o "info" sobre este elemento.
 
-  ```json
-  "facts": {
-    "yearOfBirth": 1843,
-    "placeOfBirth": "London, England",
-    "mainField": "Computer Science",
-  }
-  ```
-
-  Los _nombres de las propiedades_, deben estar en formato _camelCase_.
-  Por ejemplo **ninguno** de los siguientes nombres sería válido:
-
-  ```json
-  "facts": {
-    "year_of_birth": 1843,
-    "Place of Birth": "London, England",
-    "MainField": "Computer Science",
-  }
-  ```
-
-  Los _valores de las propiedades_, sólo pueden ser de tipo `number`, `boolean`
-  o un `string` de no más de 64 caracteres (este **no** tiene restricciones sobre
-  el tipo de caracteres que puede contener).
-
-  Y por último ten en cuenta 2 cosas:
-  - Todos los elementos del dataset deben compartir las mismas propiedades en
-    `facts`, es decir, que si un elemento tiene una propiedad `yearOfBirth`,
-    el resto de elementos del array también deben tener esa propiedad.
-  - No es necesario que los nombres de las propiedades estén en inglés,
-    `"lugarDeNacimiento"` es un nombre igual de válido.
-
-* `extraInfo`: Y por último un campo libre opcional, similar a `facts`. Si lo
-  necesitas, aquí puedes poner cualquier otro tipo de información en formato
-  donde puedes poner otra info que necesites en formato `"nombre": "valor"`,
-  pero sin restricciones sobre el tipo de dato del valor. Por ejemplo:
-
-  ```json
-  "extraInfo": {
-    "imagePrompt": "Un texto bien, bien largo...",
-    "writings": [
-      "Vol. 1",
-      "Vol. 2",
-      "Vol. 3",
-      "Vol. 4"
-    ]
-  }
-  ```
-
-Un ejemplo de data, según los requisitos anteriores podría ser:
+Un ejemplo de data de **MovieDev**:
 
 ```js
 export default [
   {
-    "id": "ada-lovelace",
-    "name": "Ada Lovelace",
-    "shortDescription": "Pionera de la informática, fue la primera programadora.",
-    "description": "Una visionaria del siglo XIX ...",
-    "imageUrl": "URL_DE_LA_IMAGEN_GENERADA",
+    "id": "hackers",
+    "name": "Hackers",
+    "shortDescription": "Jóvenes hackers y aventureros luchan contra la injusticia.",
+    "description": "Ambientada en el mundo del ciberespacio.....",
+    "imageUrl": "https://raw.githubusercontent.com/MilenaPacheco/DEV013-dataverse/main/src/img/Hackers.png",
     "facts": {
-      "yearOfBirth": 1843,
-      "placeOfBirth": "London, England",
-      "mainField": "Computer Science",
+      "yearMovie": 1995,
+      "directorMovie": "Iain Softley",
+      "productionCompany": "MGM",
+      "genreMovie": "Thriller",
+      "genreValue": "thriller"
+    },
+    "extraInfo": {
+      "rottenTomatoesScore": "32%",
+      "countryMovie": "Estados Unidos",
+      "durationMovie": "107 minutos"
     }
+  },
   },
   //... 23 objetos más
 ]
@@ -323,16 +290,12 @@ export default [
 A continuación se desglozará la estructura de la data utilizada en MovieDev:
 
 ##### Desglose de Propiedades:
+```js
 **id:** Identificador único de la película.
-
 **name:** Título de la película ("Hackers").
-
 **shortDescription:** Breve descripción de la trama.
-
 **description:** Descripción detallada de la película.
-
 **imageUrl:** URL de la imagen de la película.
-
 **facts:** Objeto que contiene información factual sobre la película:
 
 **yearMovie:** Año de lanzamiento.
@@ -345,10 +308,12 @@ A continuación se desglozará la estructura de la data utilizada en MovieDev:
 **rottenTomatoesScore:** Puntuación en Rotten Tomatoes.
 **countryMovie:** País de origen de la película.
 **durationMovie:** Duración de la película.
+```
 Este objeto proporciona una representación completa y estructurada de la información relacionada con la película.
 
 #### Capturas del prompting
 
+La data utilizada en MovieDev se genero con ayuda de inteligencia artificial como se presenta a continuación:
 <img src="./src/img/prompting/data1.png">
 <img src="./src/img/prompting/data2.png">
 <img src="./src/img/prompting/data3.png">
@@ -360,32 +325,14 @@ Este objeto proporciona una representación completa y estructurada de la inform
 
 ##### Prototipo de alta fidelidad
 
-Usando los wireframes o bocetos (_sketches_) de tu solución de interfaz
-como base, lo siguiente es diseñar tu Interfaz de Usuaria (UI por sus
-siglas en inglés - _User Interface_). Para eso debes aprender a
-utilizar alguna herramienta de diseño visual.
-Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, etc.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
-
 Recuerda pedir feedback de tu prototipo a tus compañeras y/o coaches.
 
 #### Testeos de usabilidad
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarias,
-y con base en los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+Los problemas de usabilidad que enfrentamos se centraron en la posición estratégica de los botones y en la adecuación de sus tamaños. Este desafío surgió debido a que la disposición y el tamaño de los botones son factores cruciales para garantizar una experiencia de usuario intuitiva y eficiente. La ubicación estratégica de los botones es esencial para facilitar la navegación y permitir que los usuarios accedan rápidamente a las funciones clave de la aplicación web. Del mismo modo, los tamaños adecuados de los botones son fundamentales para garantizar que sean fácilmente seleccionables y eviten posibles errores de interacción. Enfrentamos este desafío con un enfoque cuidadoso en el diseño de la interfaz, realizando pruebas exhaustivas para encontrar la disposición óptima y los tamaños que mejor se adaptaran a las necesidades de las usuarias.
+
 
 ## 8. Objetivos de aprendizaje
-
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
 ### HTML
 
@@ -423,7 +370,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   <details><summary>Links</summary><p>
 
   * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#es)
   * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 </p></details>
 
@@ -444,7 +390,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
   * [Introducción a eventos - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events)
   * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
   * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
 </p></details>
 
@@ -455,9 +400,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Introducción al DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
   * [Node.appendChild() - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
   * [Document.createElement() - MDN](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/es/docs/Web/API/Document/createTextNode)
   * [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
 </p></details>
 
 ### JavaScript
@@ -515,7 +458,6 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/flow-control/functions)
   * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/functions/classic)
   * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/functions/arrow)
-  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
 </p></details>
 
 - [ ] **Pruebas unitarias (unit tests)**
@@ -568,6 +510,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 - [ ] **Seguir los principios básicos de diseño visual**
 
+
 ### Investigación
 
 - [ ] **Planear y ejecutar testeos de usabilidad de prototipos en distintos niveles de fidelidad**
@@ -585,11 +528,4 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
   <details><summary>Links</summary><p>
 
   * [Dando Instrucciones | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/instructions)
-</p></details>
-
-- [ ] **Few shot prompting**
-
-  <details><summary>Links</summary><p>
-
-  * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
 </p></details>

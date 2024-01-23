@@ -16,22 +16,28 @@ header {
     font-size: 1.2rem;
     background-color: transparent;
     cursor: pointer;
-    color: white;
+    color: #1F0441;
+    font-family: 'Titan One', sans-serif;
 }
 
 select {
     margin: 0;
-    width: 140px;
+    width: 165px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    background-color: #1F0441;
+    text-align: center;
 }
 
 .title {
-    padding-top: 22px;
-    padding-bottom: 7px;
-    padding-left: 7px;
+    padding-top: 15px;
     width: 100vw;
-    height: 50px;
-    color: white;
-    background-color: #FC1068;
+    height: 65px;
+    color: #1F0441;
+    background-color: #FCAB10;
     text-align: center;
     font-family: 'Titan One', sans-serif;
     font-size: 15px;
@@ -39,21 +45,17 @@ select {
 
 .inputs {
     position: absolute;
-    transition: all 0.75s ease;
-    z-index: 1;
     display: none;
     flex-direction: column;
     width: 200px;
     background-color: #FCAB10;
-    align-content: center;
     font-family: 'Roboto Mono', monospace;
     align-items:flex-end;
+    padding: 9px;
     font-size: 14px;
-    text-align: right;
     color: #1F0441;
-    padding: 7px;
     border-radius: 0 0 10px 0;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 body {
@@ -103,11 +105,18 @@ ul {
 }
 
 #btn {
-    margin: 10px;
+    margin: 30px 10px 10px 10px;
+    border-radius: 5px; 
+    background-color: transparent;
+    color: #1F0441;
+    font-family: 'Titan One', sans-serif;
+    border-color: #1F0441;
+    padding: 2px;
+    cursor: pointer;
 }
 
 .cards-two {
-    background-color: #F9CE07;
+    background-color: #0CE3E8;
     width: 260px;
     padding: 15px;
     border-radius: 10px;
@@ -144,9 +153,120 @@ h2{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
 h4{
     color: white;
     font-size: 20px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    header {
+        margin: 0;
+    }
+    .title {
+        padding-top: 7px;
+        width: 100vw;
+        height: 65px;
+        color: #1F0441;
+        background-color: #FCAB10;
+        text-align: center;
+        font-family: 'Titan One', sans-serif;
+        font-size: 10px;
+    }
+    
+    body {
+      background-color: white;
+      color: #1F0441;
+      flex-grow: 1;
+    }
+
+    .inputs {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 130px;
+        background-color: #FCAB10;
+        font-family: 'Roboto Mono', monospace;
+        align-items:flex-end;
+        padding: 9px;
+        font-size: 12px;
+        color: #1F0441;
+        border-radius: 0 0 10px 0;
+        gap: 0.3rem;
+    }
+
+    img {
+        height: 14vw;
+        margin-bottom: 10px;
+        border-radius: 7px;
+    }
+    .cards {
+        width: 260px;
+        padding: 10px;
+        border-radius: 7px;
+        margin: 7px;
+        box-sizing: border-box;
+        background-color: #0CE3E8;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Roboto Mono', monospace;
+        flex-direction: column;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        align-content: center;
+    }
+    h2{
+        margin-top: 15px;
+        color: #1F0441;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    h4{
+        color: #1F0441;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    select {
+        margin: 0;
+        width: 120px;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #1F0441;
+        cursor: pointer;
+        background-color: white;
+        text-align: center;
+    }
+
+    .cards-two {
+        background-color: #0CE3E8;
+        width: 160px;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Roboto Mono', monospace;
+        margin-top: 120px;
+        margin-left: 160px;
+        margin-bottom: 111px;
+    }
+
+  }

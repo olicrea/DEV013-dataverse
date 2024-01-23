@@ -40,12 +40,10 @@ btnFilterGenre.addEventListener("change", (e) => {
 
   const filterGenre = filterData(data, "genreValue", e.target.value);
   currentMovies = [...filterGenre];
+  //console.log("Estoy ordenando por género", filterGenre);
   renderAndAppendToRoot(filterGenre);
   resetCardDiv();
   toggleMovieCards();
-
-
-  console.log("Estoy ordenando por género", filterGenre);
 }
 );
 
@@ -55,13 +53,10 @@ btnOrdenName.addEventListener("change", (e) => {
 
   const orderedData = sortData(currentMovies, "name", e.target.value);
   currentMovies = [...orderedData];
-  // console.log(ordenName);
+  //console.log("Estoy ordenando alfabéticamente", orderedData);
   renderAndAppendToRoot(orderedData);
   resetCardDiv();
   toggleMovieCards();
-
-
-  //console.log("Estoy ordenando alfabéticamente", ordenName);
 }
 );
 
@@ -71,19 +66,19 @@ btnOrderYear.addEventListener("change", (e) => {
 
   const orderYear = sortData(currentMovies, "yearMovie", e.target.value);
   currentMovies = [...orderYear];
+  //console.log(orderYear);
   renderAndAppendToRoot(orderYear);
   resetCardDiv();
   toggleMovieCards();
 
 
-  // console.log(ordenYear);
 }
 );
 
 // Este btn limpia los imputs en el menú de selección
-const btn = document.getElementById("btn");
+const btn = document.querySelector("#btn");
 
-let statisticsCountrySelect = document.getElementById("statistics-country");
+let statisticsCountrySelect = document.querySelector("#statistics-country");
 const resetfilters = () => {
   resetCardDiv();
 
@@ -172,7 +167,7 @@ btnStatistics.addEventListener("change", () => {
 
   // Crear un título para la data dentro del div
   const countryTitleParagraph = document.createElement("p");
-  countryTitleParagraph.textContent = "Películas por país:";
+  countryTitleParagraph.innerHTML = "<strong>Películas tecnológicas por país en la data MovieDev:</strong>";
   cardDiv.appendChild(countryTitleParagraph);
 
   // Iterar sobre los resultados de computeStats para acumular películas por países

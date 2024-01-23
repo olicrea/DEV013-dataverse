@@ -8,16 +8,19 @@
 </head>
 
 <body>
-  <header id="position-header">
+  <header>
     <div class="title">
       <h1>MovieDev</h1>
-      <button id="abrir" class="open-menu">Menú</button>
+      <button class="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="25" viewBox="0 0 24 24">
+          <path d="M5,7h2h12c1.1,0,2-0.9,2-2s-0.9-2-2-2H7H5C3.9,3,3,3.9,3,5S3.9,7,5,7z" fill="#1F0441"></path><path d="M19,10h-3H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h11h3c1.1,0,2-0.9,2-2S20.1,10,19,10z" fill="#1F0441"></path><path d="M19,17h-6H5c-1.1,0-2,0.9-2,2s0.9,2,2,2h8h6c1.1,0,2-0.9,2-2S20.1,17,19,17z" fill="#1F0441"></path>
+        </svg>
+      </button>
     </div>
   </header>
-  <div class="container">
 
     <div class="inputs">
-      <label for="genre">Filtrar por género</label>
+      <label for="genre"><strong>Filtrar por género</strong></label>
       <select name="genre" id="genre" data-testid="select-filter">
         <option value="a" selected disabled>Selecciona filtro</option>
       <option value="fiction">Ciencia Ficción</option>
@@ -27,44 +30,39 @@
       <option value="drama">Drama</option>
     </select>
     
-    <label for="alfa">Ordenar alfabéticamente</label>
+    <label for="alfa"><strong>Ordenar alfabéticamente</strong></label>
     <select name="alfa" id="alfa" data-testid="select-sort">
       <option value="a" selected disabled>Selecciona orden</option>
       <option value="asc">A - Z</option>
       <option value="desc">Z - A</option>
     </select>
 
-    <label for="year">Ordenar por año</label>
+    <label for="year"><strong>Ordenar por año</strong></label>
     <select name="year" id="year" data-testid="select-sort-year">
       <option value="a" selected disabled>Selecciona orden</option>
       <option value="asc">Ascendente</option>
       <option value="desc">Descendente</option>
     </select>
 
-    <label for="statistics">Estadísticas RT</label>
+    <label for="statistics"><strong>Estadísticas RT</strong></label>
     <select name="statistics" id="statistics">
-      <option value="a" selected disabled>Estadísticas Rotten Tomatoes</option>
+      <option value="a" selected disabled>Estadísticas</option>
       <option value="score50">50% y 70% en RT</option>
       <option value="score70">70% y 90% en RT</option>
       <option value="score90">90% y 100% en RT</option>
     </select>
     
-    <label for="statistics-country">Estadísticas por países</label>
+    <label for="statistics-country"><strong>Estadísticas por países</strong></label>
     <select name="statistics-country" id="statistics-country">
-      <option value="a" selected disabled>Estadísticas países</option>
+      <option value="a" selected disabled>Estadísticas</option>
       <option value="country">Películas por país</option>
     </select>
 
     <button id="btn" data-testid="button-clear">Limpiar</button>
 
   </div>
-  
-  <main>
-    <h2 class="variable"></h2>
-  </main>
-  
+ 
   <div id="root"></div>
-</div>
   <footer>M.O.Dev</footer>
   <script src="main.js" type="module"></script>
 </body>

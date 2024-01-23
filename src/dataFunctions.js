@@ -141,3 +141,4 @@ export const computeStatsScore = (data) => {
     return copyArray.sort((a, b) => (sortOrder === "asc" ? a.facts[sortBy] - b.facts[sortBy] : b.facts[sortBy] - a.facts[sortBy]));
   }
 };*/
+

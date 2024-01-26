@@ -1,4 +1,15 @@
-<h1>MovieDev</h1>
+# MovieDev
+
+<p align="center">
+  <img src= https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white alt="Visual Studio Code">
+  <img src=https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) alt="HTML5">
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white">
+   
+</p>
 
 ## Acerca de la Página Web
 
@@ -7,7 +18,7 @@
 * [3. Consideraciones técnicas](#3-consideraciones-técnicas)
 * [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
-* [6. Conceptos aplicados](#6-conceptos-aplicados)
+* [6. Algunos conceptos aplicados](#6-algunos-conceptos-aplicados)
 
 ***
 
@@ -578,7 +589,7 @@ Como equipo reflexionamos y marcamos los objetivos que hemos llegado a entender 
   * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
 </p></details>
 
-## 6. Conceptos aplicados.
+## 6. Algunos conceptos aplicados
 
 ### filter: 
 Filtra elementos de un array basándose en una condición especificada. **Sintaxis:**

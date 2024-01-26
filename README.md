@@ -70,7 +70,7 @@ La página web **MovieDev** se centra en ofrecer tres funciones clave:
 - **Estilo atractivo:** la interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
   
 
-### Test unitarios:
+### Test unitarios
 
 **MovieDev** fue desarrollada en conjunto con un exhaustivo conjunto de pruebas unitarias en formato Jest, una herramienta ampliamente reconocida para la realización de pruebas en proyectos JavaScript. 
 

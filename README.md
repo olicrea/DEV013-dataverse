@@ -102,11 +102,11 @@ La aplicación fue realizada en el marco del bootcamp para Desarrolladoras Web d
 
 **Diseño Mobile:**
 
-Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
+Tomamos en cuenta las propuestas de **Laboratoria** para nuestro diseño:
 
-* [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
+* [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14) (sugerencia de Laboratoria).
 
-- Resultado (pantalla responsive):
+* Resultado (pantalla responsive):
 
 
 <img src="image-2.png" alt="Pantalla móvil" width="50%">
@@ -116,9 +116,9 @@ Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 
 **Diseño Desktop:**
 
-* [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
+* [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png) (sugerencia de Laboratoria).
 
-- Resultado:
+* Resultado:
 
 <img src="image-1.png" alt="Pantalla móvil" width="70%">
 

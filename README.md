@@ -7,15 +7,16 @@
 * [3. Consideraciones técnicas](#3-consideraciones-técnicas)
 * [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
-* [6. Aprendizajes](#6-aprendizajes)
+* [6. Conceptos aplicados](#6-conceptos-aplicados)
 
 ***
 
 ## 1. Resumen del Proyecto
 
+#### Resultado para desktop
+
 <img src="./src/img/home.png">
 
-#### Resultado para desktop
 ![Alt text](image-1.png)
 
 
@@ -577,7 +578,8 @@ Como equipo reflexionamos y marcamos los objetivos que hemos llegado a entender 
   * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
 </p></details>
 
-## 6. Aprendizajes
+## 6. Conceptos aplicados.
+
 ### filter: 
 Filtra elementos de un array basándose en una condición especificada. **Sintaxis:**
 ```js

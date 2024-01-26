@@ -22,12 +22,12 @@
 
 ***
 
-## 1. Resumen del Proyecto
+## 1. Resumen del proyecto
 
 En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona como una colección de tarjetas que abarcan 24 películas de los géneros: documental, thriller, ciencia ficción, drama y animación. Todos las películas vinculadas al fascinante mundo de la tecnología, pensando en nuestras usuarias ideales: "Desarrolladoras Web". La información recopilada se basa en un conjunto de datos generados con la colaboración de [ChatGPT](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial).
 
 #### Resultado para desktop:
-__
+
 
 <img src="./src/img/home.png">
 
@@ -67,25 +67,20 @@ La página web **MovieDev** se centra en ofrecer tres funciones clave:
 
 - **Estadísticas por país:** calcula la frecuencia de películas existentes por país, proporcionando una visión estadística de la distribución geográfica de las películas en el conjunto de datos de MovieDev.
 
-### Diseño responsivo y estilo atractivo
+### Diseño adaptativo y estilo atractivo
 
 - **Diseño adaptativo:** la página web ha sido diseñada pensando en la accesibilidad, siendo completamente responsive para adaptarse a dispositivos de diferentes tamaños, desde computadoras de escritorio hasta teléfonos móviles.
 
 - **Estilo atractivo:** la interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
   
-### Resultado móvil:
-(Pantalla responsive)
-
-
-<img src="image-2.png" alt="Pantalla móvil" width="50%">
-
-__
 
 ### Test unitarios:
 
 **MovieDev** fue desarrollada en conjunto con un exhaustivo conjunto de pruebas unitarias en formato Jest, una herramienta ampliamente reconocida para la realización de pruebas en proyectos JavaScript. 
 
-La ventaja clave de emplear pruebas unitarias radica en su capacidad para verificar la funcionalidad correcta de las diversas funciones y la eficaz modularización del código. Durante el proceso de prueba, nos enfocamos en cada función individual, asegurándonos de que cumpliera con su propósito específico. Estas pruebas no solo ayudaron a identificar y corregir posibles errores, sino que también garantizaron la estabilidad y fiabilidad de la aplicación. 
+La ventaja clave de emplear pruebas unitarias radica en su capacidad para verificar la funcionalidad correcta de las diversas funciones y la eficaz modularización del código.
+
+Durante el proceso de prueba, nos enfocamos en cada función individual, asegurándonos de que cumpliera con su propósito específico. Estas pruebas no solo ayudaron a identificar y corregir posibles errores, sino que también garantizaron la estabilidad y fiabilidad de la aplicación. 
 
 ---
 
@@ -114,6 +109,15 @@ Diseño Mobile:
 Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 
 * [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
+
+### Resultado móvil:
+(Pantalla responsive)
+
+
+<img src="image-2.png" alt="Pantalla móvil" width="50%">
+
+__
+
 
 Diseño Desktop:
 
@@ -263,19 +267,19 @@ npm run test:oas // Esto es para correr todos los tests de OAs
 Esta data tiene una estructura archivo javascript. Este archivo, exporta un arreglo con 24 objetos y la estructura de cada objeto
 es la siguiente:
 
-* `id`: Identificador único (no pueden haber dos elementos con el mismo `id`).
+* `id`: identificador único (no pueden haber dos elementos con el mismo `id`).
   Debe ser un string de no más de 32 characteres, en minúscula, compuesto solo
   por letras, números, underscore (`_`) o guión (`-`). Por ejemplo: `"ada-lovelace"`.
-* `name`: El nombre del personaje, país, película, etc.
-* `shortDescription`: Descripción corta del elemento. Esta descripción deberá
+* `name`: el nombre del personaje, país, película, etc.
+* `shortDescription`: descripción corta del elemento. Esta descripción deberá
   tener como máximo 20 palabras.
-* `description`: Descripción extendida del elemento. Esta descripción deberá
+* `description`: descripción extendida del elemento. Esta descripción deberá
   tener entre 80 y 100 palabras. Al momento de mostrar este dato en pantalla
   puedes truncarlo para que no ocupe tanto espacio.
 * `imageUrl`: URL de la imagen. Esta imagen será generada a través de alguna
   herramienta basada en inteligencia artifical. Una vez generada la imagen,
   y guardada en tu repo, deberás agregar la URL en este campo.
-* `facts`: Un objeto con al menos **3** "hechos" o "info" sobre este elemento.
+* `facts`: un objeto con al menos **3** "hechos" o "info" sobre este elemento.
 
 Un ejemplo de data de **MovieDev**:
 
@@ -310,27 +314,27 @@ A continuación se desglozará la estructura de la data utilizada en MovieDev:
 
 ##### Desglose de Propiedades:
 
-- **id:** Identificador único de la película.
-- **name:** Título de la película ("Hackers").
-- **shortDescription:** Breve descripción de la trama.
-- **description:** Descripción detallada de la película.
+- **id:** identificador único de la película.
+- **name:** título de la película ("Hackers").
+- **shortDescription:** breve descripción de la trama.
+- **description:** descripción detallada de la película.
 - **imageUrl:** URL de la imagen de la película.
-- **facts:** Objeto que contiene información factual sobre la película:
-  - **yearMovie:** Año de lanzamiento.
-  - **directorMovie:** Director de la película.
-  - **productionCompany:** Compañía productora.
-  - **genreMovie:** Género de la película.
-  - **genreValue:** Valor adicional asociado al género (en este caso, "thriller").
-- **extraInfo:** Información adicional sobre la película:
- -  **rottenTomatoesScore:** Puntuación en Rotten Tomatoes.
-  - **countryMovie:** País de origen de la película.
-  - **durationMovie:** Duración de la película.
+- **facts:** objeto que contiene información factual sobre la película:
+  - **yearMovie:** año de lanzamiento.
+  - **directorMovie:** director de la película.
+  - **productionCompany:** compañía productora.
+  - **genreMovie:** género de la película.
+  - **genreValue:** valor adicional asociado al género.
+- **extraInfo:** información adicional sobre la película:
+ -  **rottenTomatoesScore:** puntuación en Rotten Tomatoes.
+  - **countryMovie:** país de origen de la película.
+  - **durationMovie:** duración de la película.
 
 Este objeto proporciona una representación completa y estructurada de la información relacionada con la película.
 
 #### Capturas del prompting
 
-La data utilizada en MovieDev se genero con ayuda de inteligencia artificial como se presenta a continuación:
+La data utilizada en MovieDev se generó con ayuda de inteligencia artificial como se presenta a continuación:
 
 
 <img width="500" src="./src/img/prompting/data1.png">
@@ -352,17 +356,17 @@ __
 
 Después de seleccionar la temática que queríamos trabajar: Web sobre películas de tecnología y desarrollo web, decidimos definir a nuestra usuaria ideal respondiendo las siguientes preguntas: 
 
-##### ¿Quiénes son las principales usuarias del producto?
+- ¿Quiénes son las principales usuarias del producto?
 
 Mujeres, futuras programadoras Web. Con interés en inmersión en el mundo del desarrollo Web.
 
-##### ¿Cuáles son los objetivos de estas usuarias en relación con el producto?
+- ¿Cuáles son los objetivos de estas usuarias en relación con el producto?
 Saber más sobre tecnología, sus usos, alcances, historia, utopías y distopías. Contextualizarse más. Información para conversaciones interesantes con personas del rubro.
 
-##### ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+- ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 Datos básicos y estadísticos interesantes. Resúmenes, imágenes asociadas a los films.
 
-##### ¿Cuándo utilizan o utilizarían el producto?
+- ¿Cuándo utilizan o utilizarían el producto?
 En tiempo de ocio. 
 
 Toda nuestra investigación derivó en todas las historias de usuaria de nuestro proyecto, que se muestran a continuación: 

@@ -7,6 +7,7 @@
 * [3. Consideraciones técnicas](#3-consideraciones-técnicas)
 * [4. Criterios de aceptación mínimos del proyecto](#4-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
+* [6. Aprendizajes](#6-aprendizajes)
 
 ***
 
@@ -575,3 +576,226 @@ Como equipo reflexionamos y marcamos los objetivos que hemos llegado a entender 
 
   * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
 </p></details>
+
+## 6. Aprendizajes
+### filter: 
+Filtra elementos de un array basándose en una condición especificada. **Sintaxis:**
+```js
+const newArray = array.filter(callback(element[, index[, array]])[, thisArg]);
+```
+
+### sort: 
+Ordena los elementos de un array de acuerdo con la función de comparación proporcionada. **Sintaxis:**
+```js
+array.sort([compareFunction]);
+```
+
+### map:
+Crea un nuevo array con los resultados de llamar a una función proporcionada para cada elemento del array. **Sintaxis:**
+```js
+const newArray = array.map(callback(currentValue[, index[, array]])[, thisArg]);
+```
+
+### reduce:
+Aplica una función acumulativa a los elementos de un array para reducirlos a un solo valor. **Sintaxis:**
+```js
+array.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue]);
+```
+
+### parseFloat:
+Convierte una cadena en un número de punto flotante. **Sintaxis:**
+```js
+const number = parseFloat(string);
+```
+
+### localeCompare:
+Compara dos cadenas de texto y devuelve un valor que indica si una es menor, igual o mayor que la otra. **Sintaxis:**
+```js
+const comparison = string1.localeCompare(string2);
+```
+
+### push:
+Agrega uno o más elementos al final de un array. **Sintaxis:**
+```js
+array.push(element1[, element2[, ...[, elementN]]]);
+```
+
+### length:
+Devuelve la cantidad de elementos en un array. **Sintaxis:**
+```js
+const arrayLength = array.length;
+```
+
+### puntos ".":
+Se utiliza para acceder a propiedades de un objeto. **Sintaxis:**
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  job: 'Developer'
+};
+
+console.log(person.name); // Resultado: 'John'
+```
+
+### corchetes "[]":
+Se utiliza para acceder a elementos de un array o propiedades de un objeto cuando el nombre de la propiedad es dinámico o contiene caracteres especiales. **Sintaxis:**
+```js
+const fruits = ['apple', 'banana', 'orange'];
+
+console.log(fruits[1]); // Resultado: 'banana'
+
+const propertyName = 'age';
+const person = {
+  name: 'Alice',
+  age: 25
+};
+
+console.log(person[propertyName]); // Resultado: 25
+```
+
+### querySelector: 
+Selecciona el primer elemento del DOM que coincida con el selector especificado. Arroja un elemento del DOM o null si no se encuentra ninguna coincidencia.
+```js
+const element = document.querySelector(selector);
+```
+
+### toggle:
+Alterna entre añadir y eliminar una clase en un elemento del DOM.
+```js
+element.classList.toggle(className);
+```
+
+### addEventListener:
+Agrega un evento a un elemento del DOM para que escuche eventos específicos y ejecute una función cuando se produce el evento.
+```js
+element.addEventListener(eventType, callback);
+```
+
+### createElement:
+Crea un nuevo elemento del DOM con el nombre de la etiqueta especificada.
+```js
+const newElement = document.createElement(tagName);
+```
+
+### appendChild:
+Añade un nodo al final de la lista de hijos de un nodo padre.
+```js
+parentNode.appendChild(childNode);
+```
+
+### removeChild:
+Elimina un nodo hijo de un nodo padre.
+```js
+parentNode.removeChild(childNode);
+```
+
+### innerHTML:
+Obtiene o establece el contenido HTML de un elemento del DOM.
+```js
+const content = element.innerHTML;
+element.innerHTML = newContent;
+```
+
+### textContent:
+Obtiene o establece el contenido de texto de un elemento del DOM.
+```js
+const textContent = element.textContent;
+element.textContent = newTextContent;
+```
+
+### setInterval:
+Ejecuta una función a intervalos regulares especificados en milisegundos.
+```js
+const intervalId = setInterval(callback, interval);
+```
+
+### className:
+Obtiene o establece la clase de un elemento del DOM.
+```js
+const classes = element.className;
+element.className = newClasses;
+```
+
+### classList:
+Obtiene una lista de las clases de un elemento del DOM
+```js
+const classes = element.classList;
+```
+
+### style:
+Obtiene o establece el estilo de un elemento del DOM.
+```js
+const elementStyle = element.style;
+```
+
+### selectedIndex:
+Obtiene o establece el índice seleccionado en un elemento "select" del DOM.
+```js
+const index = selectElement.selectedIndex;
+selectElement.selectedIndex = newIndex;
+```
+
+### parentNode:
+Obtiene el nodo padre de un elemento del DOM.
+```js
+const parent = element.parentNode;
+```
+
+### value:
+Obtiene o establece el valor de un elemento del DOM, como en los elementos de entrada.
+```js
+const elementValue = element.value;
+element.value = newValue;
+```
+
+### e.target.value:
+En un evento, e.target se refiere al elemento que desencadenó el evento, y .value extrae el valor actual de ese elemento. Se utiliza para obtener el valor de un elemento en el que se ha desencadenado un evento, comúnmente usado en eventos de cambio (change) en elementos de formulario.
+```js
+const handleChange = (e) => {
+  const value = e.target.value;
+  // Resto del código...
+};
+
+// Agregando el event listener para el evento de cambio
+elemento.addEventListener('change', handleChange);
+```
+
+### Object.keys:
+Se utiliza para obtener un array que contiene las claves del objeto proporcionado, permitiendo el acceso a las propiedades del objeto de manera iterable.
+```js
+const obj = { a: 1, b: 2, c: 3 };
+const keysArray = Object.keys(obj);
+
+console.log(keysArray); // Resultado: ['a', 'b', 'c']
+```
+
+
+**Eventos:**
+
+### change: 
+Se activa cuando el valor de un elemento cambia (por ejemplo, en un elemento de formulario).
+```js
+element.addEventListener('change', callback);
+```
+
+### click:
+Se activa cuando se hace clic en un elemento.
+```js
+element.addEventListener('click', callback);
+```
+
+**Elementos del DOM:**
+
+### document:
+La interfaz Document representa cualquier página web cargada en el navegador y sirve como punto de entrada al contenido de la página web, que es el árbol DOM.
+
+### window:
+Representa la ventana del navegador y proporciona métodos y propiedades .
+
+### Diferencia entre expresión y sentencia:
+- **Expresión:** una expresión es cualquier fragmento de código que produce un valor. Ejemplo: 2 + 3 es una expresión que evalúa a 5.
+
+- **Sentencia:** una sentencia es una unidad completa de código que realiza una acción. Ejemplo: if (x > 0) { console.log("Positivo"); } es una sentencia que ejecuta un bloque de código si la condición es verdadera.
+
+**La distinción clave radica en que una expresión produce un valor, mientras que una sentencia realiza una acción o controla el flujo del programa.**

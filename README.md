@@ -355,7 +355,7 @@ Datos básicos y estadísticos interesantes. Resúmenes, imágenes asociadas a l
 
 En tiempo de ocio. 
 
-Toda nuestra investigación derivó en todas las **HISTORIAS DE USUARIA*? de nuestro proyecto, que se muestran a continuación: 
+Toda nuestra investigación derivó en todas las **HISTORIAS DE USUARIA** de nuestro proyecto, que se muestran a continuación: 
 
 <img width="500" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/8ae47c2f-2d73-4248-8ccc-789672d6b015">
 

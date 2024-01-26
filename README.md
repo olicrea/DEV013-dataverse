@@ -82,7 +82,7 @@ Durante el proceso de prueba, nos enfocamos en cada función individual, asegur�
 
 ## 3. Consideraciones técnicas
 
-La aplicación fue realizada en el marco del bootcamp para Desarrolladoras Web de <Laboratoria>, en el que a su vez se nos solicitaron las siguientes consideraciones técnicas:
+La aplicación fue realizada en el marco del bootcamp para Desarrolladoras Web de **Laboratoria**, en el que a su vez se nos solicitaron las siguientes consideraciones técnicas:
 
 * Las funcionalidades de ordenar deben operar sobre la data filtrada.
   Por ejemplo, si filtro las películas de comedia y luego las ordeno por

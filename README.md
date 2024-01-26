@@ -100,7 +100,7 @@ La aplicación fue realizada en el marco del bootcamp para Desarrolladoras Web d
 * La aplicación es  _responsive_, es decir, debe visualizarse sin problemas
   desde distintos tamaños de pantallas: móviles, tablets y desktops.
 
-Diseño Mobile:
+**Diseño Mobile:**
 
 Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 
@@ -114,7 +114,7 @@ Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 --
 
 
-Diseño Desktop:
+**Diseño Desktop:**
 
 * [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
 

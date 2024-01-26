@@ -26,17 +26,13 @@
 
 En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona como una colección de tarjetas que abarcan 24 películas de los géneros: documental, thriller, ciencia ficción, drama y animación. Todos las películas vinculadas al fascinante mundo de la tecnología, pensando en nuestras usuarias ideales: "Desarrolladoras Web". La información recopilada se basa en un conjunto de datos generados con la colaboración de [ChatGPT](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial).
 
-#### Resultado para desktop:
+--
 
 
 <img src="./src/img/home.png">
 
 __
 
-
-<img src="image-1.png" alt="Pantalla móvil" width="70%">
-
-__
 
 
 ### Características principales
@@ -110,8 +106,7 @@ Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 
 * [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
 
-### Resultado móvil:
-(Pantalla responsive)
+- Resultado (pantalla responsive):
 
 
 <img src="image-2.png" alt="Pantalla móvil" width="50%">
@@ -123,6 +118,11 @@ Diseño Desktop:
 
 * [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
 
+- Resultado:
+
+<img src="image-1.png" alt="Pantalla móvil" width="70%">
+
+__
 
 ### Estructura del Proyecto.
 
@@ -310,29 +310,9 @@ export default [
 ```
 
 #### Prompt utilizado
-A continuación se desglozará la estructura de la data utilizada en MovieDev:
 
-##### Desglose de Propiedades:
 
-- **id:** identificador único de la película.
-- **name:** título de la película ("Hackers").
-- **shortDescription:** breve descripción de la trama.
-- **description:** descripción detallada de la película.
-- **imageUrl:** URL de la imagen de la película.
-- **facts:** objeto que contiene información factual sobre la película:
-  - **yearMovie:** año de lanzamiento.
-  - **directorMovie:** director de la película.
-  - **productionCompany:** compañía productora.
-  - **genreMovie:** género de la película.
-  - **genreValue:** valor adicional asociado al género.
-- **extraInfo:** información adicional sobre la película:
- -  **rottenTomatoesScore:** puntuación en Rotten Tomatoes.
-  - **countryMovie:** país de origen de la película.
-  - **durationMovie:** duración de la película.
-
-Este objeto proporciona una representación completa y estructurada de la información relacionada con la película.
-
-#### Capturas del prompting
+- Capturas del prompting:
 
 La data utilizada en MovieDev se generó con ayuda de inteligencia artificial como se presenta a continuación:
 
@@ -354,7 +334,7 @@ __
 
 #### Diseño de la Interfaz de Usuaria
 
-Después de seleccionar la temática que queríamos trabajar: Web sobre películas de tecnología y desarrollo web, decidimos definir a nuestra usuaria ideal respondiendo las siguientes preguntas: 
+Después de seleccionar la temática que queríamos trabajar: **página web sobre películas de tecnología y desarrollo web**, decidimos definir a nuestra usuaria ideal respondiendo las siguientes preguntas: 
 
 - ¿Quiénes son las principales usuarias del producto?
 
@@ -411,6 +391,7 @@ Arrojaron lo siguiente:
 
 Todos estos temas fueron considerados y abordados en nuestro entregable.
 
+---
 
 ## 5. Objetivos de aprendizaje
 
@@ -622,6 +603,8 @@ Como equipo reflexionamos y marcamos los objetivos que hemos llegado a entender 
 
   * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
 </p></details>
+
+---
 
 ## 6. Algunos conceptos aplicados
 

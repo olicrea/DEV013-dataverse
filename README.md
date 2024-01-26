@@ -31,7 +31,7 @@ En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona 
 
 <img src="./src/img/home.png">
 
-__
+--
 
 
 
@@ -318,10 +318,12 @@ La data utilizada en MovieDev se generó con ayuda de inteligencia artificial co
 
 
 <img width="500" src="./src/img/prompting/data1.png">
+
 __
 
 
 <img width="500" src="./src/img/prompting/data2.png">
+
 __
 
 
@@ -329,6 +331,7 @@ Además, usamos imágenes generadas a través de inteligencia artificial. Ejempl
 
 
 <img src="image.png" alt="Pantalla móvil" width="50%">
+
 __
 
 
@@ -341,9 +344,11 @@ Después de seleccionar la temática que queríamos trabajar: **página web sobr
 Mujeres, futuras programadoras Web. Con interés en inmersión en el mundo del desarrollo Web.
 
 - ¿Cuáles son los objetivos de estas usuarias en relación con el producto?
+
 Saber más sobre tecnología, sus usos, alcances, historia, utopías y distopías. Contextualizarse más. Información para conversaciones interesantes con personas del rubro.
 
 - ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
+
 Datos básicos y estadísticos interesantes. Resúmenes, imágenes asociadas a los films.
 
 - ¿Cuándo utilizan o utilizarían el producto?
@@ -352,6 +357,7 @@ En tiempo de ocio.
 Toda nuestra investigación derivó en todas las historias de usuaria de nuestro proyecto, que se muestran a continuación: 
 
 <img width="500" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/8ae47c2f-2d73-4248-8ccc-789672d6b015">
+
 __
 
 
@@ -366,6 +372,7 @@ A continuación se muestran capturas de nuestros prototipos de baja, mediana y a
 __
 
 
+
 #### Mediana fidelidad
 
 <img width="517" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/354153b9-bb62-4a22-aa46-3e0c3b2ab5b3">
@@ -373,11 +380,13 @@ __
 Enlace: https://www.figma.com/proto/XNxIMUAnDnIHL85t7uu5W4/MovieDev-MEDIANA-F.?type=design&node-id=0-1&t=yTF97nxfWS6n1wPi-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=17%3A175
 
 
+
 #### Alta fidelidad
 
 <img width="1000" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/a6a8ae5a-d968-4980-9dac-05f2f93ad175">
 
 Enlace: https://www.figma.com/file/6BDUns99NmJqwwlsWQ3NEA/Untitled?type=design&mode=design&t=Y5brons7GHSLIU9y-0
+
 
 
 #### Testeos de usabilidad

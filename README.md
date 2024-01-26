@@ -24,14 +24,20 @@
 
 ## 1. Resumen del Proyecto
 
-#### Resultado para desktop
+En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona como una colección de tarjetas que abarcan 24 películas de los géneros: documental, thriller, ciencia ficción, drama y animación. Todos las películas vinculadas al fascinante mundo de la tecnología, pensando en nuestras usuarias ideales: "Desarrolladoras Web". La información recopilada se basa en un conjunto de datos generados con la colaboración de [ChatGPT](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial).
+
+#### Resultado para desktop:
+__
 
 <img src="./src/img/home.png">
 
-![Alt text](image-1.png)
+__
 
 
-En este proyecto, hemos creado la plataforma web **MovieDev**, la cual funciona como una colección de tarjetas que abarcan 24 películas de los géneros: documental, thriller, ciencia ficción, drama y animación. Todos las películas vinculadas al fascinante mundo de la tecnología, pensando en nuestras usuarias ideales: "Desarrolladoras Web". La información recopilada se basa en un conjunto de datos generados con la colaboración de [ChatGPT](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial).
+<img src="image-1.png" alt="Pantalla móvil" width="70%">
+
+__
+
 
 ### Características principales
 
@@ -67,13 +73,19 @@ La página web **MovieDev** se centra en ofrecer tres funciones clave:
 
 - **Estilo atractivo:** la interfaz se beneficia de un diseño estéticamente agradable, con colores y elementos visuales que mejoran la experiencia de navegación y destacan la temática tecnológica.
   
-#### Resultado movil
-![Alt text](image-2.png)
+### Resultado móvil:
 (Pantalla responsive)
+
+
+<img src="image-2.png" alt="Pantalla móvil" width="50%">
+
+__
 
 ### Test unitarios:
 
-**MovieDev** fue desarrollada en conjunto con un exhaustivo conjunto de pruebas unitarias en formato Jest, una herramienta ampliamente reconocida para la realización de pruebas en proyectos JavaScript. La ventaja clave de emplear pruebas unitarias radica en su capacidad para verificar la funcionalidad correcta de las diversas funciones y la eficaz modularización del código. Durante el proceso de prueba, nos enfocamos en cada componente individual, asegurándonos de que cumpliera con su propósito específico y de que la interacción entre ellos fuera coherente. Estas pruebas no solo ayudaron a identificar y corregir posibles errores, sino que también garantizaron la estabilidad y fiabilidad del sistema en su conjunto. Al incorporar el enfoque de prueba, pudimos abordar de manera proactiva cualquier inconveniente, lo que condujo a una aplicación MovieDev más confiable y funcional.
+**MovieDev** fue desarrollada en conjunto con un exhaustivo conjunto de pruebas unitarias en formato Jest, una herramienta ampliamente reconocida para la realización de pruebas en proyectos JavaScript. 
+
+La ventaja clave de emplear pruebas unitarias radica en su capacidad para verificar la funcionalidad correcta de las diversas funciones y la eficaz modularización del código. Durante el proceso de prueba, nos enfocamos en cada función individual, asegurándonos de que cumpliera con su propósito específico. Estas pruebas no solo ayudaron a identificar y corregir posibles errores, sino que también garantizaron la estabilidad y fiabilidad de la aplicación. 
 
 ---
 
@@ -131,6 +143,8 @@ como toda la configuración de dependencias:
    └── tests-read-only
 
 ```
+
+---
 
 ## 4. Criterios de aceptación mínimos del proyecto
 
@@ -244,7 +258,7 @@ npm run test:oas // Esto es para correr todos los tests de OAs
     para importar y exportar valores desde un modulo JavaScript.
 
 
-#### Generación de datos 
+### Generación de datos 
 
 Esta data tiene una estructura archivo javascript. Este archivo, exporta un arreglo con 24 objetos y la estructura de cada objeto
 es la siguiente:
@@ -295,33 +309,43 @@ export default [
 A continuación se desglozará la estructura de la data utilizada en MovieDev:
 
 ##### Desglose de Propiedades:
-```js
-**id:** Identificador único de la película.
-**name:** Título de la película ("Hackers").
-**shortDescription:** Breve descripción de la trama.
-**description:** Descripción detallada de la película.
-**imageUrl:** URL de la imagen de la película.
-**facts:** Objeto que contiene información factual sobre la película:
-  **yearMovie:** Año de lanzamiento.
-  **directorMovie:** Director de la película.
-  **productionCompany:** Compañía productora.
-  **genreMovie:** Género de la película.
-  **genreValue:** Valor adicional asociado al género (en este caso, "thriller").
-**extraInfo:** Información adicional sobre la película:
-  **rottenTomatoesScore:** Puntuación en Rotten Tomatoes.
-  **countryMovie:** País de origen de la película.
-  **durationMovie:** Duración de la película.
-```
+
+- **id:** Identificador único de la película.
+- **name:** Título de la película ("Hackers").
+- **shortDescription:** Breve descripción de la trama.
+- **description:** Descripción detallada de la película.
+- **imageUrl:** URL de la imagen de la película.
+- **facts:** Objeto que contiene información factual sobre la película:
+  - **yearMovie:** Año de lanzamiento.
+  - **directorMovie:** Director de la película.
+  - **productionCompany:** Compañía productora.
+  - **genreMovie:** Género de la película.
+  - **genreValue:** Valor adicional asociado al género (en este caso, "thriller").
+- **extraInfo:** Información adicional sobre la película:
+ -  **rottenTomatoesScore:** Puntuación en Rotten Tomatoes.
+  - **countryMovie:** País de origen de la película.
+  - **durationMovie:** Duración de la película.
+
 Este objeto proporciona una representación completa y estructurada de la información relacionada con la película.
 
 #### Capturas del prompting
 
 La data utilizada en MovieDev se genero con ayuda de inteligencia artificial como se presenta a continuación:
-<img src="./src/img/prompting/data1.png">
-<img src="./src/img/prompting/data2.png">
+
+
+<img width="500" src="./src/img/prompting/data1.png">
+__
+
+
+<img width="500" src="./src/img/prompting/data2.png">
+__
+
 
 Además, usamos imágenes generadas a través de inteligencia artificial. Ejemplo de promp y resultado:
-![Alt text](image.png)
+
+
+<img src="image.png" alt="Pantalla móvil" width="50%">
+__
 
 
 #### Diseño de la Interfaz de Usuaria
@@ -343,25 +367,31 @@ En tiempo de ocio.
 
 Toda nuestra investigación derivó en todas las historias de usuaria de nuestro proyecto, que se muestran a continuación: 
 
-![Criterios de aceptación y definición de terminado](https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/8ae47c2f-2d73-4248-8ccc-789672d6b015)
+<img width="500" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/8ae47c2f-2d73-4248-8ccc-789672d6b015">
+__
 
 
-##### Prototipos de alta, mediana y baja fidelidad
+
+### Prototipos de alta, mediana y baja fidelidad
 
 A continuación se muestran capturas de nuestros prototipos de baja, mediana y alta fidelidad. Para los cuales pedimos feedback a nuestras compañeras y coaches.
 
-### Baja fidelidad
+#### Baja fidelidad
+
 <img width="456" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/6740d6fa-a88a-45db-ab71-bff995b1e05e">
+__
 
 
-### Mediana fidelidad
+#### Mediana fidelidad
+
 <img width="517" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/354153b9-bb62-4a22-aa46-3e0c3b2ab5b3">
 
 Enlace: https://www.figma.com/proto/XNxIMUAnDnIHL85t7uu5W4/MovieDev-MEDIANA-F.?type=design&node-id=0-1&t=yTF97nxfWS6n1wPi-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=17%3A175
 
 
-### Alta fidelidad
-<img width="571" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/a6a8ae5a-d968-4980-9dac-05f2f93ad175">
+#### Alta fidelidad
+
+<img width="1000" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/a6a8ae5a-d968-4980-9dac-05f2f93ad175">
 
 Enlace: https://www.figma.com/file/6BDUns99NmJqwwlsWQ3NEA/Untitled?type=design&mode=design&t=Y5brons7GHSLIU9y-0
 

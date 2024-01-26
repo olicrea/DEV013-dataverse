@@ -111,7 +111,7 @@ Tomamos en cuenta estas propuestas de <Laboratoria> para nuestro diseño:
 
 <img src="image-2.png" alt="Pantalla móvil" width="50%">
 
-__
+--
 
 
 Diseño Desktop:
@@ -122,7 +122,7 @@ Diseño Desktop:
 
 <img src="image-1.png" alt="Pantalla móvil" width="70%">
 
-__
+--
 
 ### Estructura del Proyecto.
 
@@ -319,12 +319,12 @@ La data utilizada en MovieDev se generó con ayuda de inteligencia artificial co
 
 <img width="500" src="./src/img/prompting/data1.png">
 
-__
+--
 
 
 <img width="500" src="./src/img/prompting/data2.png">
 
-__
+--
 
 
 Además, usamos imágenes generadas a través de inteligencia artificial. Ejemplo de promp y resultado:
@@ -332,7 +332,7 @@ Además, usamos imágenes generadas a través de inteligencia artificial. Ejempl
 
 <img src="image.png" alt="Pantalla móvil" width="50%">
 
-__
+--
 
 
 #### Diseño de la Interfaz de Usuaria
@@ -351,14 +351,15 @@ Saber más sobre tecnología, sus usos, alcances, historia, utopías y distopía
 
 Datos básicos y estadísticos interesantes. Resúmenes, imágenes asociadas a los films.
 
-- ¿Cuándo utilizan o utilizarían el producto?
+- ¿Cuándo utilizan o utilizarían el producto
+
 En tiempo de ocio. 
 
 Toda nuestra investigación derivó en todas las historias de usuaria de nuestro proyecto, que se muestran a continuación: 
 
 <img width="500" alt="image" src="https://github.com/MilenaPacheco/DEV013-dataverse/assets/153201066/8ae47c2f-2d73-4248-8ccc-789672d6b015">
 
-__
+--
 
 
 

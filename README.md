@@ -335,7 +335,7 @@ Además, usamos imágenes generadas a través de inteligencia artificial. Ejempl
 --
 
 
-#### Diseño de la Interfaz de Usuaria
+### Diseño de la Interfaz de Usuaria
 
 Después de seleccionar la temática que queríamos trabajar: **página web sobre películas de tecnología y desarrollo web**, decidimos definir a nuestra usuaria ideal respondiendo las siguientes preguntas: 
 
@@ -390,7 +390,7 @@ Enlace: https://www.figma.com/file/6BDUns99NmJqwwlsWQ3NEA/Untitled?type=design&m
 
 
 
-#### Testeos de usabilidad
+### Testeos de usabilidad
 Arrojaron lo siguiente:
 - Problemas de usabilidad en la posición del menú de filtrado, ordenado y botones asociados, así como en la adecuación de sus tamaños. Este desafío surgió debido a que la disposición y el tamaño de estos son factores cruciales para garantizar una experiencia de usuario intuitiva y eficiente. Enfrentamos este desafío con un enfoque cuidadoso en el diseño de la interfaz.
 - Teníamos muchos colores en el diseño de la interfaz. También resultaban muy brillantes.
